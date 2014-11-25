@@ -1,0 +1,420 @@
+@import "../../../../../../Applications/MAMP/htdocs/wp/wp-content/themes/ecustom/css/less/bootstrap/bootstrap";
+@import "../../../../../../Applications/MAMP/htdocs/wp/wp-content/themes/ecustom/css/less/bootstrap/responsive";
+
+@red: #ea1e24;
+@brightred: #ff3137;
+@almost-black: #333333;
+@navbarHeight: 114px;
+@navbarBackgroundHighlight: #ffffff;
+@navbarBackground: #ffffff;
+@navbarBorder: none;
+@navbarText: #59595b;
+@navbarLinkColor: #59595b;
+@navbarLinkColorHover: @red;
+@navbarLinkColorActive: @red;
+@navbarLinkBackgroundHover: #fff;
+@navbarLinkBackgroundActive: #fff;
+@baseBorderRadius: 3px;
+@linkColor: @red;
+@cobalt: #366593;
+@lightcobalt: #5686ae;
+@skyblue: #4B8CCC;
+@smoke: #F8F8F8;
+@darksmoke: #F1F1F1;
+@adminBarHeight: 32px;
+@adminBarMobileHeight: 47px;
+@hrcolor: #d5d5d5;
+@mobileWidth: 767px;
+@clearNavBarCollapse: 75px;
+@thisNavbarCompactHeight: 48px;
+@navbarCollapseWidthForHeader: @navbarCollapseWidth;
+@lighter-black: #5a5a5a;
+@smallerModalBreak: 540px;
+@main-gutter-width: 14px;
+
+@import "https://cloud.typography.com/7866252/699502/css/fonts.css";
+@import "https://www.ecornell.com/wp-content/themes/ecustom/font/newjune.css";
+
+@sansFontFamily:  'Gotham 4r', 'Gotham A', 'Gotham B', "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+.newJune(){
+  font-family: 'NewJuneMedium-Italic';
+  font-weight: normal;
+  font-style: normal;
+}
+.newJuneBold(){
+  font-family: 'NewJuneSemibold-Italic';
+  font-weight: normal;
+  font-style: normal;
+}
+
+.gothamBook() {
+	font-family: 'Gotham 4r', 'Gotham A', 'Gotham B';
+	font-weight: 400;
+	font-style: normal;
+}
+
+.gothamItalic() {
+	font-family: 'Gotham 4i', 'Gotham A', 'Gotham B';
+	font-weight: 400;
+	font-style: italic;
+}
+
+.gothamMedium() {
+	font-family: 'Gotham 5r', 'Gotham A', 'Gotham B';
+	font-weight: 500;
+	font-style: normal;
+}
+
+.gothamMediumItalic() {
+	font-family: 'Gotham 5i', 'Gotham A', 'Gotham B';
+	font-weight: 500;
+	font-style: italic;
+}
+
+.red-btn {
+  display: inline-block;
+  .ie7-inline-block();
+  padding: 7px 29px;
+  font-size: 18px;
+  line-height: 1;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  .buttonBackground(@red, @red, #fff, 0);
+  .border-radius(10px);
+  .ie7-restore-left-whitespace(); // Give IE7 some love
+  .box-shadow(1px 1px 3px rgba(0,0,0,.29));
+  
+  &:hover {
+    color: #fff;
+    text-decoration: none;
+    background: @brightred;
+  }
+  &:active{
+    color: #fff;
+    text-decoration: none;
+    background: #d10c12;
+  }
+  &.disabled {
+  	  background: #d10c12;
+	  &.disabled:hover,
+	  &.disabled:active {
+	  	cursor: not-allowed;
+	  }
+  }
+  &:focus {
+    .tab-focus();
+  }
+}
+
+.stretch-full() {
+  margin-left: -@main-gutter-width;
+  margin-right: -@main-gutter-width;
+}
+
+
+a {
+  .gothamMedium() !important;
+}
+
+body {
+	font-size: 13px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	.gothamMedium();
+	white-space: normal;
+	display: block;
+}
+
+.topNavigationGroup {
+	display: none;	
+}
+
+.headerGroup {
+	background: @red;
+	margin: 0 !important;
+			
+	.schoolCorporateLogo,
+	.groupCorporateLogo,
+	.schoolCorporateHeader {
+		height: auto !important;
+		margin: auto;
+		float: none !important;
+		width: 20%;
+		.box-sizing(border-box);
+		display: inline-block;
+  		.ie7-inline-block();
+  		vertical-align: middle;
+	}	
+			
+	.schoolCorporateLogo {
+		a {
+			.hide-text;
+			background-color: transparent;
+			border: 0;
+			width: 125px;
+			height: 33px;
+			background-image: url(https://s3.amazonaws.com/ecornell/partner_pages/ecornell-partner-logo-white.png);
+			background-position: 0 0;
+			background-repeat: no-repeat;
+			display: block;
+			margin-left: 20px;
+		
+			img {
+				display: none;
+			}
+		}
+	}
+	
+	.groupCorporateLogo {
+		width: 59% !important;
+			
+		#corporateGroupLogo {
+			max-width: 100% !important;
+			padding-bottom: 10px;
+		}
+	}
+	
+	.schoolCorporateHeader {
+		
+		a {
+			.hide-text;
+	    	.square(61px);
+	    	background: url(https://www.ecornell.com/wp-content/themes/ecustom/img/sprite.png) -167px -61px no-repeat;
+	    	display: block;
+	    	float: right;
+	    	margin-right: 20px;
+	    
+			img {
+				display: none;
+			}
+		}
+	}
+}
+
+.contactInfo {
+	h1 {
+		.gothamMedium() !important;
+		font-size: 14px !important;
+	}
+}
+
+.welcome {
+	iframe,
+	embed,
+	object,
+	h4 {
+		display: none;
+	}
+	
+	img {
+		width: 100%;
+	}
+}
+
+.poweredBy {
+	display: none;
+}
+
+div#templateContent01 {
+	margin-top: 0 !important;
+	border-top: 10px solid #ddd;
+}
+
+div#templateContent01Panel01 {
+	width: 21%;
+	.box-sizing(border-box);
+	
+	.segmentContainer01Content {
+		width: auto;
+		padding: 10px 10px 0 10px;
+	}
+}
+
+div#templateContent01Panel03 {
+	border-left: 1px solid #DDD;
+	width: 79%;
+	.box-sizing(border-box);
+	
+	.segmentContainer03Content {
+		width: auto;
+		padding: @main-gutter-width;
+	}
+}
+
+.quote-author {
+	text-align: right;
+	margin-top: 20px;
+	font-weight: 500;
+}
+
+.cta-outer-wrapper {
+	background: #d7e0e7;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	.stretch-full();
+	
+	.cta-wrapper {
+		width: 100%;
+	
+		td {
+			padding: 20px;
+			width: 54%;
+			.box-sizing(border-box);
+			vertical-align: top;
+			
+			&:first-child {
+				width: 46%;
+				border-right: 1px solid #c9ced1;
+			}
+			
+			.red-btn {
+				margin-top: 20px;
+			}
+		}
+		
+		h4 {
+			margin: 0;
+			font-size: 15px;
+			padding-bottom: 10px;
+			color: @lighter-black;
+		}
+		
+		.video-thumb-wrapper {
+			float: right;
+			width: 54%;
+			margin-left: 10px;
+			margin-bottom: 10px;
+			
+			iframe {
+				display: none;
+			}
+		}
+	}//.cta-wrapper
+}//.cta-outer-wrapper
+
+.cert-crs-header {
+	.gothamBook();
+	.stretch-full();
+	font-size: 20px;
+	background: @lightcobalt;
+	color: #fff;
+	text-align: center;
+	margin-bottom: 0;
+	line-height: 44px;
+}
+
+.enroll-now-instructions {
+	
+	td {
+		padding: 10px;
+		
+		&:first-child {
+			border-right: 1px solid #ddd;
+		}
+		
+		+ td {
+			.gothamMedium();
+			font-size: 16px;
+		}
+	}
+}
+
+.courseCertListing {
+	.stretch-full() !important;
+	border-top: 1px solid #ddd;
+	
+	> br {
+		display: none;
+	}
+	
+	> h2 {
+		line-height: 22px;
+		
+		> a {
+			.newJune() !important;
+			color: @red;
+			
+			> img {
+				vertical-align: text-top;
+			}
+		}
+	}
+	
+	#certificateListing,
+	#courseListing {
+		h2 {
+			.gothamMedium();
+		}
+		
+		.availableLink {
+			color: @red;
+		}
+	}
+}
+
+#videoModal {
+	.box-shadow(none) !important;
+	background: transparent !important;
+	border: none !important;
+	
+	.modal-header {
+		padding: 0 !important;
+		border: none !important;
+		
+		.close {
+			.opacity(70);
+			color: #fff;
+			text-shadow: none;
+			font-size: 25px;
+			padding-left: 5px;
+		}
+	}
+	
+	.modal-body {
+		padding: 0 !important;
+		
+		.video-container {
+			padding-bottom: 62%;
+		}
+	}
+}
+
+/* utility classes */
+.img-left {
+	float: left;
+	margin-right: 2%;
+	margin-bottom: 1%;	
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

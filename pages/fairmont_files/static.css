@@ -1,0 +1,18 @@
+.blur{
+	background-color: #ccc; /*shadow color*/
+	color: inherit;
+	margin-left: 4px;
+	margin-top: 4px;
+}
+
+.shadow {
+	background-color: #666; /*shadow color*/
+	color: inherit;
+}
+
+.shadowContent {
+	background-color: #666; /*background color of content*/
+	color: #000; /*text color of content*/
+	border: 1px solid #000; /*border color*/
+	padding: 0px 0px;
+}

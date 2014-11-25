@@ -1,0 +1,84 @@
+/* main menu list */
+#uc-nav { 
+	margin: 0 auto;
+	padding: 0;
+}
+
+/* main menu list item container */
+#uc-nav > li { 
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	float: left;
+	border-left: #111 1px solid;
+}
+
+/* main menu list item container */
+#uc-nav > li.first { 
+	border-left: none;
+}
+
+/* drop-down menu container */
+#uc-nav > li > div { 
+	margin: 0;
+	padding: 0;
+	border: #DDD 1px solid;
+	border-bottom: #BBB 4px solid;
+	
+	position: absolute;
+	z-index: 30; /* Show on top of everything */
+	visibility: hidden; /* hidden by default */
+}
+
+/* all menu links */
+#uc-nav a { 
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	display: block;
+	width: auto;
+}
+
+/* all menu links on hover */
+#uc-nav a:hover { 
+	background: #B5231D; 
+	color: #000; 
+}
+
+/* main menu links */
+#uc-nav > li > a { 
+	padding-top: 10px;
+	padding-bottom: 10px;
+	
+	background: #807f83; 
+	text-align: center;
+	text-decoration: none;
+	color: #FFF; 
+}
+
+/* 
+ Defining the widths per element.
+ The page width is 940px, however for the best effect 
+ the following widths need to add up to 932px, as 6px
+ are taken up by the 6 left borders and a 2px slack is given
+ to prevent the horizontal list from wrapping when the browser
+ zooms out of the page.   
+*/
+#uc-nav #nav1 {	width: 128px; }
+#uc-nav #nav2 {	width: 110px; }
+#uc-nav #nav3 {	width: 130px; }
+#uc-nav #nav4 {	width: 160px; }
+#uc-nav #nav5 {	width: 140px; }
+#uc-nav #nav6 {	width: 104px; }
+#uc-nav #nav7 {	width: 162px; }
+
+/* drop-down menu links */
+#uc-nav > li > div > a { 
+	padding: 5px 22px;
+	white-space: nowrap;
+	text-align: left;
+	text-decoration: none;
+	background: #807f83; 
+	color: #FFF; 
+	border-bottom: #DDD 1px solid;
+}

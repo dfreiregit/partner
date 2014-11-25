@@ -1,0 +1,238 @@
+button.buttonProminent,
+button.buttonProminentHover,
+button.buttonProminentDown {
+    margin: 0px 0px 0px 0px;
+    border: 0px none transparent;  /* needed */
+    padding: 0px 0px 0px 0px;      /* needed */
+    background-color: transparent;
+    font-size: 12px;
+    font-weight: bold;    
+    width: 120px;
+}
+button.buttonProminent {
+    color: #444;
+}
+
+button.buttonProminentHover {
+    color: #B5231D;
+}
+
+button.buttonProminentDown {
+    color: #B5231D;
+}
+
+button.buttonProminent div,
+button.buttonProminentHover div,
+button.buttonProminentDown div {
+    height: 24px;
+    padding-right: 15px;
+    background: transparent url('/images/button-right.gif') no-repeat;
+    background-position: right top;
+}
+
+button.buttonProminentDown div {
+    background: transparent url('/images/button-right.gif') no-repeat;
+    background-position: right top;
+}
+
+button.buttonProminent div span,
+button.buttonProminentHover div span,
+button.buttonProminentDown div span {
+    display: block;
+    height: 24px;
+    padding-top: 4px;
+    padding-left: 15px;
+    background: transparent url('/images/button-left.gif') no-repeat;
+    line-height: 14px;
+}
+
+button.buttonProminentDown div span {
+    background: transparent url('/images/button-left.gif') no-repeat;
+}
+
+.buttonBorder { 
+	display: inline;
+	margin-right: 5px;
+}
+
+button.buttonBasic,
+button.buttonBasicHover,
+button.buttonBasicDown {
+    margin: 0px 0px 0px 0px;
+    border: 0px none transparent;  /* needed */
+    padding: 0px 0px 0px 0px;      /* needed */
+    background-color: transparent;
+    font-size: 12px;
+    font-weight: bold;        
+}
+
+button.buttonBasic {
+    color: #444;
+}
+button.buttonBasicHover {
+    color: #B5231D;
+}
+
+button.buttonBasicDown {
+    color: #B5231D;
+}
+button.buttonBasic div,
+button.buttonBasicHover div,
+button.buttonBasicDown div {
+    height: 24px;
+    padding-right: 15px;
+    background: transparent url('/images/button-right.gif') no-repeat;
+    background-position: right top;
+}
+
+button.buttonBasicDown div {
+    background: transparent url('/images/button-right.gif') no-repeat;
+    background-position: right top;
+}
+
+button.buttonBasic div span,
+button.buttonBasicHover div span,
+button.buttonBasicDown div span {
+    display: block;
+    height: 24px;
+    padding-top: 4px;
+    padding-left: 15px;
+    background: transparent url('/images/button-left.gif') no-repeat;
+    line-height: 14px;
+}
+
+button.buttonBasicDown div span {
+    background: transparent url('/images/button-left.gif') no-repeat;
+}
+
+button.buttonSuperProminent,
+button.buttonSuperProminentHover,
+button.buttonSuperProminentDown {
+    margin: 0px 0px 0px 0px;
+    border: 0px none transparent;  /* needed */
+    padding: 0px 0px 0px 0px;      /* needed */
+    background-color: transparent;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+button.buttonSuperProminent {
+    color: #444;
+}
+
+button.buttonSuperProminentHover {
+    color: #B5231D;
+}
+
+button.buttonSuperProminentDown {
+    color: #B5231D;
+}
+
+button.buttonSuperProminent div,
+button.buttonSuperProminentHover div,
+button.buttonSuperProminentDown div {
+    padding-right: 15px;
+    background-image: url(/images/button-right.gif);
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
+button.buttonSuperProminent div span,
+button.buttonSuperProminentHover div span,
+button.buttonSuperProminentDown div span {
+    display: block;
+    background-image: url(/images/button-left.gif);
+    background-repeat: no-repeat;
+    padding-top: 4px;
+    padding-left: 15px;
+    height: 22px;
+    line-height: 14px;
+}
+
+button.ForwardButton,
+button.ForwardButtonHover,
+button.ForwardButtonDown {
+    margin: 0px 0px 0px 0px;
+    border: 0px none transparent;  /* needed */
+    padding: 0px 0px 0px 0px;      /* needed */
+    background-color: transparent;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+button.ForwardButton {
+    color: #444;
+}
+
+button.ForwardButtonHover {
+    color: #B5231D;
+}
+
+button.ForwardButtonDown {
+    color: #B5231D;
+}
+
+button.ForwardButton div,
+button.ForwardButtonHover div,
+button.ForwardButtonDown div {
+    padding-right: 15px;
+    background-image: url(/images/button-arrow-right.gif);
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
+button.ForwardButton div span,
+button.ForwardButtonHover div span,
+button.ForwardButtonDown div span {
+    display: block;
+    background-image: url(/images/button-left.gif);
+    background-repeat: no-repeat;
+    padding-top: 4px;
+    padding-left: 15px;
+    height: 22px;
+    line-height: 14px;
+}
+
+button.BackButton,
+button.BackButtonHover,
+button.BackButtonDown {
+    margin: 0px 0px 0px 0px;
+    border: 0px none transparent;  /* needed */
+    padding: 0px 0px 0px 0px;      /* needed */
+    background-color: transparent;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+button.BackButton {
+    color: #444;
+}
+
+button.BackButtonHover {
+    color: #B5231D;
+}
+
+button.BackButtonDown {
+    color: #B5231D;
+}
+
+button.BackButton div,
+button.BackButtonHover div,
+button.BackButtonDown div {
+    padding-right: 15px;
+    background-image: url(/images/button-right.gif);
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
+button.BackButton div span,
+button.BackButtonHover div span,
+button.BackButtonDown div span {
+    display: block;
+    background-image: url(/images/button-arrow-left.gif);
+    background-repeat: no-repeat;
+    padding-top: 4px;
+    padding-left: 15px;
+    height: 22px;
+    line-height: 14px;
+}
