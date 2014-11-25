@@ -73,7 +73,9 @@
 	font-style: italic;
 }
 
-.red-btn {
+.red-btn,
+a.red-btn:link	 {
+  .gothamBook() !important;
   display: inline-block;
   .ie7-inline-block();
   padding: 7px 29px;
@@ -83,6 +85,7 @@
   vertical-align: middle;
   cursor: pointer;
   .buttonBackground(@red, @red, #fff, 0);
+  color: #fff !important;
   .border-radius(10px);
   .ie7-restore-left-whitespace(); // Give IE7 some love
   .box-shadow(1px 1px 3px rgba(0,0,0,.29));
@@ -396,6 +399,14 @@ div#templateContent01Panel03 {
 			
 			.row-fluid:first-child {
 				margin-bottom: 20px;
+			}
+		}
+		
+		> .span5 {
+			padding-right: 0;
+			
+			@media ( max-width: @mobileWidth ) {
+				padding-right: 20px;
 			}
 		}
 		

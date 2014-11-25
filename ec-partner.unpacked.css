@@ -5782,7 +5782,11 @@ a.badge:hover {
   }
 
 }
-*/.red-btn {
+*/.red-btn,
+a.red-btn:link {
+  font-family: 'Gotham 4r', 'Gotham A', 'Gotham B' !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
   display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
@@ -5810,6 +5814,7 @@ a.badge:hover {
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
 
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  color: #fff !important;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
@@ -5819,39 +5824,53 @@ a.badge:hover {
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.29);
 }
 .red-btn:hover,
+a.red-btn:link:hover,
 .red-btn:active,
+a.red-btn:link:active,
 .red-btn.active,
+a.red-btn:link.active,
 .red-btn.disabled,
-.red-btn[disabled] {
+a.red-btn:link.disabled,
+.red-btn[disabled],
+a.red-btn:link[disabled] {
   color: #ffffff;
   background-color: #ea1e24;
   *background-color: #da141a;
 }
 .red-btn:active,
-.red-btn.active {
+a.red-btn:link:active,
+.red-btn.active,
+a.red-btn:link.active {
   background-color: #c31217 \9;
 }
-.red-btn:first-child {
+.red-btn:first-child,
+a.red-btn:link:first-child {
   *margin-left: 0;
 }
-.red-btn:hover {
+.red-btn:hover,
+a.red-btn:link:hover {
   color: #fff;
   text-decoration: none;
   background: #ff3137;
 }
-.red-btn:active {
+.red-btn:active,
+a.red-btn:link:active {
   color: #fff;
   text-decoration: none;
   background: #d10c12;
 }
-.red-btn.disabled {
+.red-btn.disabled,
+a.red-btn:link.disabled {
   background: #d10c12;
 }
 .red-btn.disabled.disabled:hover,
-.red-btn.disabled.disabled:active {
+a.red-btn:link.disabled.disabled:hover,
+.red-btn.disabled.disabled:active,
+a.red-btn:link.disabled.disabled:active {
   cursor: not-allowed;
 }
-.red-btn:focus {
+.red-btn:focus,
+a.red-btn:link:focus {
   outline: thin dotted #333;
   outline: thin dotted \9;
   /* IE6-9 */
@@ -6158,6 +6177,14 @@ div#templateContent01Panel03 .segmentContainer03Content {
 .cta-outer-wrapper .cta-wrapper > .span5 .row-fluid:first-child,
 .cta-outer-wrapper .cta-wrapper > .span7 .row-fluid:first-child {
   margin-bottom: 20px;
+}
+.cta-outer-wrapper .cta-wrapper > .span5 {
+  padding-right: 0;
+}
+@media (max-width: 767px) {
+  .cta-outer-wrapper .cta-wrapper > .span5 {
+    padding-right: 20px;
+  }
 }
 .cta-outer-wrapper .cta-wrapper > .span7 {
   border-left: 1px solid #c9ced1;
