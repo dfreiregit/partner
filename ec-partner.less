@@ -25,6 +25,7 @@
 @adminBarMobileHeight: 47px;
 @hrcolor: #d5d5d5;
 @mobileWidth: 767px;
+@navbarCollapseWidth: 979px;
 @clearNavBarCollapse: 75px;
 @thisNavbarCompactHeight: 48px;
 @navbarCollapseWidthForHeader: @navbarCollapseWidth;
@@ -128,6 +129,29 @@ h1, h2, h3, h4, h5, h6 {
 	display: block;
 }
 
+.pageWidth {
+	border-top: none;
+	
+	@media ( max-width: 1020px ) {
+		width: 94%;
+	}
+	
+	@media ( max-width: @mobileWidth ) {
+		width: 100%;
+	}
+}
+
+@media ( max-width: 1020px ) {
+	#uc-footer-wrapper,
+	.footer {
+		width: 100%;
+		
+		.container {
+			width: 93%;
+		}
+	}
+}
+
 .topNavigationGroup {
 	display: none;	
 }
@@ -135,6 +159,8 @@ h1, h2, h3, h4, h5, h6 {
 .headerGroup {
 	background: @red;
 	margin: 0 !important;
+	white-space: nowrap;
+	padding: 0 10px;
 			
 	.schoolCorporateLogo,
 	.groupCorporateLogo,
@@ -142,7 +168,8 @@ h1, h2, h3, h4, h5, h6 {
 		height: auto !important;
 		margin: auto;
 		float: none !important;
-		width: 20%;
+		max-width: 20%;
+		width: 100%;
 		.box-sizing(border-box);
 		display: inline-block;
   		.ie7-inline-block();
@@ -160,7 +187,12 @@ h1, h2, h3, h4, h5, h6 {
 			background-position: 0 0;
 			background-repeat: no-repeat;
 			display: block;
-			margin-left: 20px;
+			margin-left: 0;
+			max-width: 100%;
+			
+			@media ( max-width: @mobileWidth ) {
+				background-size: contain;
+			}
 		
 			img {
 				display: none;
@@ -169,11 +201,17 @@ h1, h2, h3, h4, h5, h6 {
 	}
 	
 	.groupCorporateLogo {
-		width: 59% !important;
+		max-width: 58% !important;
 			
 		#corporateGroupLogo {
 			max-width: 100% !important;
 			padding-bottom: 10px;
+			height: auto !important;
+			max-height: 91px;
+			
+			@media ( max-width: @navbarCollapseWidth ) {
+				max-width: 92% !important;
+			}
 		}
 	}
 	
@@ -182,11 +220,20 @@ h1, h2, h3, h4, h5, h6 {
 		a {
 			.hide-text;
 	    	.square(61px);
-	    	background: url(https://www.ecornell.com/wp-content/themes/ecustom/img/sprite.png) -167px -61px no-repeat;
+	    	background: url(https://www.ecornell.com/wp-content/themes/ecustom/img/cornell-seal-white.png) 0 0 no-repeat;
 	    	display: block;
 	    	float: right;
-	    	margin-right: 20px;
+	    	margin-right: 0;
+	    	max-width: 100%;
 	    
+	    	@media ( max-width: @mobileWidth ) {
+				background-size: contain;
+			}
+			
+			@media ( max-width: 450px ) {
+				width: 45px;
+			}
+			
 			img {
 				display: none;
 			}
@@ -194,18 +241,46 @@ h1, h2, h3, h4, h5, h6 {
 	}
 }
 
-.contactInfo {
-	h1 {
-		.gothamMedium() !important;
-		font-size: 14px !important;
+#leftPanelContent {
+	.clearfix();
+	@media ( max-width: @navbarCollapseWidth ) {
+		text-align: center;
+	}
+}
+
+.welcome-vid-link {
+	@media ( max-width: @navbarCollapseWidth ) {
+		display: inline-block;
+    	.ie7-inline-block();
+    	width: 30%;
+    	margin-left: 4%;
+		vertical-align: top;
+	}
+	
+	@media ( max-width: @mobileWidth ) {
+		display: block;
+		width: 60%;
+		margin: auto;
+		margin-top: 4%;
 	}
 }
 
 .welcome {
+	padding-top: 14px;
+	border-top: 2px solid #000;
+	margin-top: 7px;
+	
+	@media ( max-width: @navbarCollapseWidth ) {
+		border-top: none;
+		padding-top: 0;
+		margin-top: 0;
+	}
+	
 	iframe,
 	embed,
 	object,
-	h4 {
+	h4,
+	.video-container {
 		display: none;
 	}
 	
@@ -214,22 +289,69 @@ h1, h2, h3, h4, h5, h6 {
 	}
 }
 
+.about-ecornell {
+	@media ( max-width: @navbarCollapseWidth ) {
+		border-top: 1px solid #ddd;
+		border-bottom: 1px solid #ddd;
+		margin-top: 10px;
+	}
+	
+	h5 {
+		font-size: 15px;
+		margin: 18px 0 3px 0;
+	}
+}
+
+li.iconItem {
+	background: no-repeat left 1px;
+}
+
 .poweredBy {
 	display: none;
 }
 
 div#templateContent01 {
 	margin-top: 0 !important;
-	border-top: 10px solid #ddd;
+	border-top: 7px solid #ddd;
 }
 
 div#templateContent01Panel01 {
 	width: 21%;
 	.box-sizing(border-box);
 	
+	@media ( max-width: @navbarCollapseWidth ) {
+		width: 100%;
+	}
+	
 	.segmentContainer01Content {
 		width: auto;
 		padding: 10px 10px 0 10px;
+		
+		.contactInfo {
+			@media ( max-width: @navbarCollapseWidth ) {
+				display: inline-block;
+    			.ie7-inline-block();
+				width: auto;
+				vertical-align: top;
+				text-align: left;
+			}
+			
+			+ .contactInfo {
+				@media ( max-width: @navbarCollapseWidth ) {
+					margin-left: 0;
+					margin-top: 40px;
+				}
+				
+				@media ( max-width: 402px ) {
+					margin-top: 0;
+				}
+			}
+		
+			h1 {
+				.gothamMedium() !important;
+				font-size: 14px !important;
+			}
+		}
 	}
 }
 
@@ -237,6 +359,10 @@ div#templateContent01Panel03 {
 	border-left: 1px solid #DDD;
 	width: 79%;
 	.box-sizing(border-box);
+	
+	@media ( max-width: @navbarCollapseWidth ) {
+		width: 100%;
+	}
 	
 	.segmentContainer03Content {
 		width: auto;
@@ -259,27 +385,39 @@ div#templateContent01Panel03 {
 	.cta-wrapper {
 		width: 100%;
 	
-		td {
+		> .span5,
+		> .span7 {
 			padding: 20px;
-			width: 54%;
-			.box-sizing(border-box);
 			vertical-align: top;
-			
-			&:first-child {
-				width: 46%;
-				border-right: 1px solid #c9ced1;
-			}
 			
 			.red-btn {
 				margin-top: 20px;
+			}
+			
+			.row-fluid:first-child {
+				margin-bottom: 20px;
+			}
+		}
+		
+		> .span7 {
+			border-left: 1px solid #c9ced1;
+			
+			@media ( max-width: @mobileWidth ) {
+				border-left: none;
+				border-top: 1px solid #c9ced1;
 			}
 		}
 		
 		h4 {
 			margin: 0;
 			font-size: 15px;
-			padding-bottom: 10px;
+			padding-bottom: 7px;
 			color: @lighter-black;
+		}
+		
+		h5 {
+			color: @lighter-black;
+			margin: 0;
 		}
 		
 		.video-thumb-wrapper {
@@ -298,12 +436,18 @@ div#templateContent01Panel03 {
 .cert-crs-header {
 	.gothamBook();
 	.stretch-full();
+	margin-top: 20px;
+	margin-bottom: 0;
 	font-size: 20px;
 	background: @lightcobalt;
 	color: #fff;
 	text-align: center;
-	margin-bottom: 0;
-	line-height: 44px;
+	line-height: normal;
+	padding: 11px 2px;
+	
+	@media ( max-width: @mobileWidth ) {
+		font-size: 17px;
+	}
 }
 
 .enroll-now-instructions {
@@ -399,6 +543,14 @@ div#templateContent01Panel03 {
 
 .text-center {
 	text-align: center;
+}
+
+.float-left {
+	float: left;
+}
+
+.float-right {
+	float: right;
 }
 
 .video-container {

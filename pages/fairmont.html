@@ -247,46 +247,10 @@ div.yui-b p em {
 	 
 		
 <div class="clientContent">
-	<script type="text/javascript" src="https://www.ecornell.com/wp-content/themes/ecustom/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="https://www.ecornell.com/wp-content/plugins/ecustom-embed/js/jQuery.tubeplayer.min.js"></script>
-	<script type="text/javascript" src="https://www.ecornell.com/wp-content/plugins/ecustom-embed/js/ecustom-embed.js"></script>
-	<script>
-		jQuery(document).ready(function ($) {//important to pass the $ because somewhere else in WP uses jQuery.noConflict(), which invalidates the $
-			$('.welcome').insertAfter( $('.contactInfo:last') );			
-			$('.welcome').prepend('<img src="http://i.ytimg.com/vi/L7vWyD4wvY4/0.jpg" />');
-			$('.welcome').wrap('<a href="#videoModal" data-toggle="modal"></a>');
-			
-			$('*[data-toggle=modal]').click(function(e){
-				e.preventDefault();
-				
-				var $firstEmbed = $('iframe:first, embed:first, object:first', this).clone();
-				
-				var newSrc = $firstEmbed.attr('src');
-				if ( newSrc.indexOf('?')==-1 ) {
-					newSrc += '?autoplay=1';
-				} else {
-					newSrc += '&autoplay=1';
-				}
-				
-				$firstEmbed.attr('src', newSrc );
-				$('.video-container:first', '#videoModal').html( $firstEmbed );
-			});
-			/*
-			$('#videoModal').on('shown', function() {
-		  	  $('iframe, embed, object', this).each(function(){
-		  		  $(this).attr('src', $(this).attr('src') + '&autoplay=1' );
-		  	  });
-		    });
-			*/
-			$('#videoModal').on('hidden', function() {
-		  	  $('iframe, embed, object', '#videoModal').remove();
-		    });
-			
-		});
-	</script>
+	<script type="text/javascript" src="https://s3.amazonaws.com/ecornell/partner_pages/js/partner.js"></script>	
 	    
 	<div class="clearfix">	    
-		<img alt="" src="https://ecornellsv-test.destinysolutions.com/srs/upload/groups/14586714/Matt_Smith_Photo.jpg" class="img-left" />
+		<img alt="" src="https://ecornellpv-test.destinysolutions.com/srs/upload/groups/14586714/Matt_Smith_Photo.jpg" class="img-left" />
 		&ldquo;As FRHI Hotels &amp; Resorts continues our journey of global growth, leadership development is a key priority. 
 		We are proud to partner&nbsp;with Cornell University on a learning initiative that offers our leaders access to its leading e-learning curriculum
 		—and a world of opportunities for professional development.&rdquo;
@@ -296,15 +260,23 @@ div.yui-b p em {
 	</div>
 
 	<div class="cta-outer-wrapper">
-		<table class="cta-wrapper">
-			<tr>
-				<td>
-					<h4>Free Resources for FRHI&#160;employees.</h4>
-					<h5>Direct To Your Inbox</h5>
-					Free webinars, downloadable tools, course invites, and articles that help you improve your performance at work.
-					<div class="text-center"><a href="http://bit.ly/1y8tugr" target="_blank"><button class="red-btn">Get Started</button></a></div>
-				</td>
-				<td>
+		<div class="cta-wrapper row-fluid">
+			<div class="span5">
+					<div class="row-fluid">
+						<div class="span4 offset1 text-center">
+							<img src="https://s3.amazonaws.com/ecornell/partner_pages/tool.png" />
+						</div>
+						<div class="span7 text-center">
+							<h4>Free Resources for FRHI&#160;employees.</h4>
+							<h5>Direct To Your Inbox</h5>
+						</div>
+					</div>
+					<div class="row-fluid text-center">
+						Free webinars, downloadable tools, course invites, and articles that help you improve your performance at work.
+						<div class="text-center"><a href="http://bit.ly/1y8tugr" target="_blank"><button class="red-btn">Get Started</button></a></div>
+					</div>
+			</div>
+			<div class="span7">
 					<h4>eCornell Certificate Programs Right for You</h4>
 					<a href="#videoModal" data-toggle="modal">
 						<div class="video-thumb-wrapper">
@@ -314,11 +286,10 @@ div.yui-b p em {
 							<iframe width="560" height="315" src="//www.youtube.com/embed/videoseries?list=PLhj9XCdPnIwYvDoY3wRtlk9GPfzxo7a1K"  frameborder="0" allowfullscreen></iframe>
 						</div>
 					</a>
-					For hotel and restaurant professionals at any level, <strong>a certificate from Cornell’s School of Hotel Administration confers instant credibility and respect.</strong> 
+					For hotel and restaurant professionals at any level, <strong>a certificate from Cornell's School of Hotel Administration confers instant credibility and respect.</strong> 
 					You'll connect with other hospitality professionals from around the world and learn from each other's experience, developing a broader understanding of hospitality and building a professional network.
-				</td>
-			</tr>
-		</table>
+			</div>
+		</div>
 	</div><!-- /cta-outer-wrapper -->
 	
 	NOTICES:
@@ -337,13 +308,13 @@ div.yui-b p em {
     
     <!-- Video modal window -->
 	<div id="videoModal" class="modal hide fade" aria-hidden="true">
-		  <div class="modal-header">
-		    <button aria-hidden="true" data-dismiss="modal" class="close" type="button">x</button>
-		    	  </div>
-		  <div class="modal-body">
-				<div class="video-container"></div>				
-		  </div>
-		</div><!-- /videoModal -->
+	  <div class="modal-header">
+	    <button aria-hidden="true" data-dismiss="modal" class="close" type="button">x</button>
+	    	  </div>
+	  <div class="modal-body">
+			<div class="video-container"></div>				
+	  </div>
+	</div><!-- /videoModal -->
     
     
     
