@@ -7,9 +7,9 @@ jQuery(document).ready(function ($) {//important to pass the $ because somewhere
 	
 	$('.welcome').insertAfter( $('.contactInfo:last') );
 	$('.welcome').prepend('<img src="https://s3.amazonaws.com/ecornell/partner_pages/welcome-thumb.jpg" />');
-	$('.welcome').after('<div class="about-ecornell"><h5>About eCornell</h5><p>eCornell\'s online courses are authored by faculty from Cornell University\'s world-renowned Johnson School, '+
-			'the ILR School (Industrial and Labor Relations), and the School of Hotel Administration, a leader in hospitality-management education consistently '+
-			'ranked among the very top institutions worldwide.</p></div>');
+	$('.welcome').after('<div class="about-ecornell"><h5>About eCornell</h5><p>eCornell\'s online courses are authored by faculty from Cornell University\'s ' + 
+			'world-renowned Samuel Curtis Johnson Graduate School of Management, the School of Industrial and Labor Relations (ILR), and the School of Hotel Administration, ' + 
+			'a leader in hospitality-management education consistently ranked among the very top institutions worldwide.</p></div>');
 	$('.welcome').wrap('<a href="#videoModal" data-toggle="modal" class="welcome-vid-link"></a>');
 	
 	$('*[data-toggle=modal]').click(function(e){

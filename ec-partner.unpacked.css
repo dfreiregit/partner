@@ -6069,6 +6069,9 @@ h6 {
 .welcome img {
   width: 100%;
 }
+.about-ecornell {
+  font-size: 12px;
+}
 @media (max-width: 979px) {
   .about-ecornell {
     border-top: 1px solid #ddd;
@@ -6178,21 +6181,21 @@ div#templateContent01Panel03 .segmentContainer03Content {
 .cta-outer-wrapper .cta-wrapper > .span7 .row-fluid:first-child {
   margin-bottom: 20px;
 }
-.cta-outer-wrapper .cta-wrapper > .span5 {
-  padding-right: 0;
-}
-@media (max-width: 767px) {
-  .cta-outer-wrapper .cta-wrapper > .span5 {
-    padding-right: 20px;
-  }
-}
 .cta-outer-wrapper .cta-wrapper > .span7 {
-  border-left: 1px solid #c9ced1;
+  border-right: 1px solid #c9ced1;
 }
 @media (max-width: 767px) {
   .cta-outer-wrapper .cta-wrapper > .span7 {
-    border-left: none;
-    border-top: 1px solid #c9ced1;
+    border-right: none;
+    border-bottom: 1px solid #c9ced1;
+  }
+}
+.cta-outer-wrapper .cta-wrapper > .span5 {
+  padding-left: 0;
+}
+@media (max-width: 767px) {
+  .cta-outer-wrapper .cta-wrapper > .span5 {
+    padding-left: 20px;
   }
 }
 .cta-outer-wrapper .cta-wrapper h4 {
