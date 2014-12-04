@@ -6153,6 +6153,9 @@ div#templateContent01Panel03 .segmentContainer03Content {
   width: auto;
   padding: 14px;
 }
+.quote-outer-wrapper {
+  letter-spacing: -0.1px;
+}
 .quote-author {
   text-align: right;
   margin-top: 20px;
@@ -6160,7 +6163,7 @@ div#templateContent01Panel03 .segmentContainer03Content {
 }
 .cta-outer-wrapper {
   background: #d7e0e7;
-  margin-top: 10px;
+  margin-top: 20px;
   margin-bottom: 10px;
   margin-left: -14px;
   margin-right: -14px;
@@ -6168,33 +6171,40 @@ div#templateContent01Panel03 .segmentContainer03Content {
 .cta-outer-wrapper .cta-wrapper {
   width: 100%;
 }
-.cta-outer-wrapper .cta-wrapper > .span5,
-.cta-outer-wrapper .cta-wrapper > .span7 {
+.cta-outer-wrapper .cta-wrapper > .span6 {
   padding: 20px;
   vertical-align: top;
 }
-.cta-outer-wrapper .cta-wrapper > .span5 .red-btn,
-.cta-outer-wrapper .cta-wrapper > .span7 .red-btn {
-  margin-top: 20px;
-}
-.cta-outer-wrapper .cta-wrapper > .span5 .row-fluid:first-child,
-.cta-outer-wrapper .cta-wrapper > .span7 .row-fluid:first-child {
-  margin-bottom: 20px;
-}
-.cta-outer-wrapper .cta-wrapper > .span7 {
-  border-right: 1px solid #c9ced1;
+.cta-outer-wrapper .cta-wrapper > .span6 .red-btn {
+  margin-bottom: 54px;
 }
 @media (max-width: 767px) {
-  .cta-outer-wrapper .cta-wrapper > .span7 {
-    border-right: none;
-    border-bottom: 1px solid #c9ced1;
+  .cta-outer-wrapper .cta-wrapper > .span6 .red-btn {
+    margin-bottom: 20px;
   }
 }
-.cta-outer-wrapper .cta-wrapper > .span5 {
+.cta-outer-wrapper .cta-wrapper > .span6 .row-fluid:first-child {
+  margin-bottom: 44px;
+}
+@media (max-width: 767px) {
+  .cta-outer-wrapper .cta-wrapper > .span6 .row-fluid:first-child {
+    margin-bottom: 10px;
+  }
+}
+.cta-outer-wrapper .cta-wrapper > .span6:first-child {
+  border-right: 2px solid #fff;
+}
+@media (max-width: 767px) {
+  .cta-outer-wrapper .cta-wrapper > .span6:first-child {
+    border-right: none;
+    border-bottom: 1px solid #fff;
+  }
+}
+.cta-outer-wrapper .cta-wrapper > .span6:nth-child(2) {
   padding-left: 0;
 }
 @media (max-width: 767px) {
-  .cta-outer-wrapper .cta-wrapper > .span5 {
+  .cta-outer-wrapper .cta-wrapper > .span6:nth-child(2) {
     padding-left: 20px;
   }
 }
@@ -6209,10 +6219,8 @@ div#templateContent01Panel03 .segmentContainer03Content {
   margin: 0;
 }
 .cta-outer-wrapper .cta-wrapper .video-thumb-wrapper {
-  float: right;
-  width: 54%;
-  margin-left: 10px;
-  margin-bottom: 10px;
+  width: 74%;
+  margin: 0 auto 10px;
 }
 .cta-outer-wrapper .cta-wrapper .video-thumb-wrapper iframe {
   display: none;

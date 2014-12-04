@@ -375,6 +375,10 @@ div#templateContent01Panel03 {
 	}
 }
 
+.quote-outer-wrapper {
+	letter-spacing: -.1px;
+}
+
 .quote-author {
 	text-align: right;
 	margin-top: 20px;
@@ -383,37 +387,44 @@ div#templateContent01Panel03 {
 
 .cta-outer-wrapper {
 	background: #d7e0e7;
-	margin-top: 10px;
+	margin-top: 20px;
 	margin-bottom: 10px;
 	.stretch-full();
 	
 	.cta-wrapper {
 		width: 100%;
 	
-		> .span5,
-		> .span7 {
+		> .span6 {
 			padding: 20px;
 			vertical-align: top;
 			
 			.red-btn {
-				margin-top: 20px;
+				margin-bottom: 54px;
+				
+				@media ( max-width: @mobileWidth ) {
+					margin-bottom: 20px;
+				}
 			}
 			
 			.row-fluid:first-child {
-				margin-bottom: 20px;
+				margin-bottom: 44px;
+				
+				@media ( max-width: @mobileWidth ) {
+					margin-bottom: 10px;
+				}
 			}
 		}
 		
-		> .span7 {
-			border-right: 1px solid #c9ced1;
+		> .span6:first-child {
+			border-right: 2px solid #fff;
 			
 			@media ( max-width: @mobileWidth ) {
 				border-right: none;
-				border-bottom: 1px solid #c9ced1;
+				border-bottom: 1px solid #fff;
 			}
 		}
 		
-		> .span5 {
+		> .span6:nth-child(2) {
 			padding-left: 0;
 			
 			@media ( max-width: @mobileWidth ) {
@@ -434,10 +445,8 @@ div#templateContent01Panel03 {
 		}
 		
 		.video-thumb-wrapper {
-			float: right;
-			width: 54%;
-			margin-left: 10px;
-			margin-bottom: 10px;
+			width: 74%;
+			margin: 0 auto 10px;
 			
 			iframe {
 				display: none;
