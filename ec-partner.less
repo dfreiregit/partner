@@ -377,6 +377,10 @@ div#templateContent01Panel03 {
 
 .quote-outer-wrapper {
 	letter-spacing: -.1px;
+	
+	> img {
+		padding-top: .5%;
+	}
 }
 
 .quote-author {
@@ -394,62 +398,71 @@ div#templateContent01Panel03 {
 	.cta-wrapper {
 		width: 100%;
 	
+		
 		> .span6 {
-			padding: 20px;
-			vertical-align: top;
+			width: 55%;
+			margin: 0;
 			
-			.red-btn {
-				margin-bottom: 54px;
+			&.text-wrapper {
+				width: 45%;
+				margin: 0;
+			}		
+			
+			@media ( max-width: @mobileWidth ) {
+				width: 100% !important;
+			}
+		}
+		
+		.video-thumb-wrapper {
+			img {
+				display: block;
+				position: relative;
+				right: -2px;
+			}
+		
+			iframe {
+				display: none;
+			}
+		}
+		
+		.cta-left {
+			padding: 0 0 8px 20px;
+			line-height: normal;
+			
+			h4 {
+				padding-top: 16px;
+				padding-bottom: 2px;
+				margin: 0;
+				font-size: 15px;
+				color: @lighter-black;
 				
-				@media ( max-width: @mobileWidth ) {
-					margin-bottom: 20px;
+				@media ( max-width: 1020px ) {
+					padding-top: 12px;
 				}
 			}
 			
-			.row-fluid:first-child {
-				margin-bottom: 44px;
+			.red-btn {
+				margin-top: 20px;
+				
+				@media ( max-width:1020px )  {
+					font-size: 14px;
+				}
+				
+				@media ( min-width:980px ) and ( max-width:1020px )  {
+					margin-top: 13px;
+				}
+				
+				@media (min-width: 810px) and (max-width: @navbarCollapseWidth){
+					margin-top: 20px;
+				}
+				
+				@media ( min-width:768px ) and ( max-width:809px )  {
+					margin-top: 9px;
+				}
 				
 				@media ( max-width: @mobileWidth ) {
 					margin-bottom: 10px;
 				}
-			}
-		}
-		
-		> .span6:first-child {
-			border-right: 2px solid #fff;
-			
-			@media ( max-width: @mobileWidth ) {
-				border-right: none;
-				border-bottom: 1px solid #fff;
-			}
-		}
-		
-		> .span6:nth-child(2) {
-			padding-left: 0;
-			
-			@media ( max-width: @mobileWidth ) {
-				padding-left: 20px;
-			}
-		}
-		
-		h4 {
-			margin: 0;
-			font-size: 15px;
-			padding-bottom: 7px;
-			color: @lighter-black;
-		}
-		
-		h5 {
-			color: @lighter-black;
-			margin: 0;
-		}
-		
-		.video-thumb-wrapper {
-			width: 74%;
-			margin: 0 auto 10px;
-			
-			iframe {
-				display: none;
 			}
 		}
 	}//.cta-wrapper

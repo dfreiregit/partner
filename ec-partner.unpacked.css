@@ -6156,6 +6156,9 @@ div#templateContent01Panel03 .segmentContainer03Content {
 .quote-outer-wrapper {
   letter-spacing: -0.1px;
 }
+.quote-outer-wrapper > img {
+  padding-top: .5%;
+}
 .quote-author {
   text-align: right;
   margin-top: 20px;
@@ -6172,58 +6175,69 @@ div#templateContent01Panel03 .segmentContainer03Content {
   width: 100%;
 }
 .cta-outer-wrapper .cta-wrapper > .span6 {
-  padding: 20px;
-  vertical-align: top;
-}
-.cta-outer-wrapper .cta-wrapper > .span6 .red-btn {
-  margin-bottom: 54px;
-}
-@media (max-width: 767px) {
-  .cta-outer-wrapper .cta-wrapper > .span6 .red-btn {
-    margin-bottom: 20px;
-  }
-}
-.cta-outer-wrapper .cta-wrapper > .span6 .row-fluid:first-child {
-  margin-bottom: 44px;
-}
-@media (max-width: 767px) {
-  .cta-outer-wrapper .cta-wrapper > .span6 .row-fluid:first-child {
-    margin-bottom: 10px;
-  }
-}
-.cta-outer-wrapper .cta-wrapper > .span6:first-child {
-  border-right: 2px solid #fff;
-}
-@media (max-width: 767px) {
-  .cta-outer-wrapper .cta-wrapper > .span6:first-child {
-    border-right: none;
-    border-bottom: 1px solid #fff;
-  }
-}
-.cta-outer-wrapper .cta-wrapper > .span6:nth-child(2) {
-  padding-left: 0;
-}
-@media (max-width: 767px) {
-  .cta-outer-wrapper .cta-wrapper > .span6:nth-child(2) {
-    padding-left: 20px;
-  }
-}
-.cta-outer-wrapper .cta-wrapper h4 {
-  margin: 0;
-  font-size: 15px;
-  padding-bottom: 7px;
-  color: #5a5a5a;
-}
-.cta-outer-wrapper .cta-wrapper h5 {
-  color: #5a5a5a;
+  width: 55%;
   margin: 0;
 }
-.cta-outer-wrapper .cta-wrapper .video-thumb-wrapper {
-  width: 74%;
-  margin: 0 auto 10px;
+.cta-outer-wrapper .cta-wrapper > .span6.text-wrapper {
+  width: 45%;
+  margin: 0;
+}
+@media (max-width: 767px) {
+  .cta-outer-wrapper .cta-wrapper > .span6 {
+    width: 100% !important;
+  }
+}
+.cta-outer-wrapper .cta-wrapper .video-thumb-wrapper img {
+  display: block;
+  position: relative;
+  right: -2px;
 }
 .cta-outer-wrapper .cta-wrapper .video-thumb-wrapper iframe {
   display: none;
+}
+.cta-outer-wrapper .cta-wrapper .cta-left {
+  padding: 0 0 8px 20px;
+  line-height: normal;
+}
+.cta-outer-wrapper .cta-wrapper .cta-left h4 {
+  padding-top: 16px;
+  padding-bottom: 2px;
+  margin: 0;
+  font-size: 15px;
+  color: #5a5a5a;
+}
+@media (max-width: 1020px) {
+  .cta-outer-wrapper .cta-wrapper .cta-left h4 {
+    padding-top: 12px;
+  }
+}
+.cta-outer-wrapper .cta-wrapper .cta-left .red-btn {
+  margin-top: 20px;
+}
+@media (max-width: 1020px) {
+  .cta-outer-wrapper .cta-wrapper .cta-left .red-btn {
+    font-size: 14px;
+  }
+}
+@media (min-width: 980px) and (max-width: 1020px) {
+  .cta-outer-wrapper .cta-wrapper .cta-left .red-btn {
+    margin-top: 13px;
+  }
+}
+@media (min-width: 810px) and (max-width: 979px) {
+  .cta-outer-wrapper .cta-wrapper .cta-left .red-btn {
+    margin-top: 20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 809px) {
+  .cta-outer-wrapper .cta-wrapper .cta-left .red-btn {
+    margin-top: 9px;
+  }
+}
+@media (max-width: 767px) {
+  .cta-outer-wrapper .cta-wrapper .cta-left .red-btn {
+    margin-bottom: 10px;
+  }
 }
 .cert-crs-header {
   font-family: 'Gotham 4r', 'Gotham A', 'Gotham B';
