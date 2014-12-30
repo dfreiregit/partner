@@ -78,8 +78,8 @@ a.red-btn:link	 {
   .gothamBook() !important;
   display: inline-block;
   .ie7-inline-block();
-  padding: 7px 29px;
-  font-size: 18px;
+  padding: 7px 20px;
+  font-size: 15px;
   line-height: 1;
   text-align: center;
   vertical-align: middle;
@@ -102,6 +102,45 @@ a.red-btn:link	 {
   }
   &.disabled {
   	  background: #d10c12;
+	  &.disabled:hover,
+	  &.disabled:active {
+	  	cursor: not-allowed;
+	  }
+  }
+  &:focus {
+    .tab-focus();
+  }
+}
+
+.cobalt-btn,
+a.cobalt-btn:link	 {
+  .gothamBook() !important;
+  display: inline-block;
+  .ie7-inline-block();
+  padding: 7px 20px;
+  font-size: 15px;
+  line-height: 1;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  .buttonBackground(@lightcobalt, @lightcobalt, #fff, 0);
+  color: #fff !important;
+  .border-radius(10px);
+  .ie7-restore-left-whitespace(); // Give IE7 some love
+  .box-shadow(1px 1px 3px rgba(0,0,0,.29));
+  
+  &:hover {
+    color: #fff;
+    text-decoration: none;
+    background: @skyblue;
+  }
+  &:active{
+    color: #fff;
+    text-decoration: none;
+    background: #23415E;
+  }
+  &.disabled {
+  	  background: #23415E;
 	  &.disabled:hover,
 	  &.disabled:active {
 	  	cursor: not-allowed;
@@ -400,11 +439,11 @@ div#templateContent01Panel03 {
 	
 		
 		> .span6 {
-			width: 55%;
+			width: 43%;
 			margin: 0;
 			
 			&.text-wrapper {
-				width: 45%;
+				width: 57%;
 				margin: 0;
 			}		
 			
@@ -427,7 +466,6 @@ div#templateContent01Panel03 {
 		
 		.cta-left {
 			padding: 0 0 8px 20px;
-			line-height: normal;
 			
 			h4 {
 				padding-top: 16px;
@@ -441,7 +479,8 @@ div#templateContent01Panel03 {
 				}
 			}
 			
-			.red-btn {
+			.red-btn,
+			.cobalt-btn {
 				margin-top: 20px;
 				
 				@media ( max-width:1020px )  {
@@ -474,7 +513,7 @@ div#templateContent01Panel03 {
 	margin-top: 20px;
 	margin-bottom: 0;
 	font-size: 20px;
-	background: @lightcobalt;
+	background: @red;
 	color: #fff;
 	text-align: center;
 	line-height: normal;
@@ -501,6 +540,11 @@ div#templateContent01Panel03 {
 	}
 }
 
+#noticesSection {
+	font-size: 85%;
+	margin-top: 20px;
+}
+
 .courseCertListing {
 	.stretch-full() !important;
 	border-top: 1px solid #ddd;
@@ -522,14 +566,91 @@ div#templateContent01Panel03 {
 		}
 	}
 	
+	span {
+		display: none;
+	}
+	
 	#certificateListing,
 	#courseListing {
 		h2 {
 			.gothamMedium();
+			line-height: normal;
+			cursor: pointer;
+			
+			&:before {
+				content: '›';
+				font-size: 20px;
+				display: inline-block;
+				.ie7-inline-block();
+				vertical-align: middle;
+				padding-right: 8px;
+				padding-top: 0;
+				margin-left: 5px;
+				margin-top: -5px;
+			}
+			
+			&.expanded {
+				&:before {
+					.rotate(90deg);
+					vertical-align: baseline;
+					padding-right: 0;
+					padding-top: 6px;
+					margin-left: 7px;
+					padding-left: 6px;
+					margin-top: -8px;
+				}
+			}
 		}
 		
 		.availableLink {
 			color: @red;
+		}
+	}
+	
+	.toggleLink a {
+		color: @lighter-black !important;
+		.gothamMedium() !important;
+	
+		&:before {
+			.rotate(90deg);
+			content: '›';
+			font-size: 20px;
+			display: inline-block;
+			.ie7-inline-block();
+			vertical-align: middle;
+			padding-right: 0px;
+			padding-top: 13px;
+			margin-left: 20px;
+			padding-left: 0px;
+			margin-top: -1px;
+		}
+		
+		&.collapsed {
+			&:before {
+				.rotate(0deg);
+				vertical-align: baseline;
+				margin-left: 11px;
+				margin-right: 9px;
+				padding-top: 4px;
+			}
+		}
+	
+		img {
+			display: none !important;
+		}
+	}
+	
+	.products-list {
+		margin-left: 3%;
+		width: 97%;
+		display: none;
+		
+		td {
+			width: 85%;
+			
+			+ td {
+				width: 15%;
+			}
 		}
 	}
 }

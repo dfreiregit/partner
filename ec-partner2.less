@@ -1,19 +1,32 @@
-@import "ec-partner.css";
+@import "ec-partner.less";
 
 .headerGroup {
 	background: #fff;
 
 	.schoolCorporateLogo {
 		a {
-			background-image: url(https://s3.amazonaws.com/ecornell/partner_pages/ecornell-partner-logo-white.png);
+			background-image: none;
 			
+			img {
+				display: block;
+			}
 		}
 	}
 	
 	.schoolCorporateHeader {
 		
 		a {
-	    	background: url(https://www.ecornell.com/wp-content/themes/ecustom/img/cornell-seal-white.png) 0 0 no-repeat;
+	    	background: none;
+	    	
+	    	img {
+				display: block;
+				width: 61px;
+				height: 61px;
+			}
 		}
 	}
+}
+
+div#templateContent01 {
+	border-top: 7px solid @red;
 }

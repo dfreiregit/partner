@@ -12,16 +12,28 @@ jQuery(document).ready(function ($) {//important to pass the $ because somewhere
 			'a leader in hospitality-management education consistently ranked among the very top institutions worldwide.</p></div>');
 	$('.welcome').wrap('<a href="#videoModal" data-toggle="modal" class="welcome-vid-link"></a>');
 	
+	$('#noticesSection').insertAfter( $('.courseCertListing:first') );
+	
+	$('.cta-left a.cobalt-btn, .cta-left a.red-btn').each(function(){
+		$cloneBtn = $(this).clone();
+		$cloneBtn.insertAfter( $('.courseCertListing:first') );
+	});
+	
+	$cloneYT = $('iframe:first', '.cta-wrapper a[href=#videoModal]').clone();
+	$('.clone-yt').append( $cloneYT );
+	
+	
 	$('*[data-toggle=modal]').click(function(e){
 		e.preventDefault();
 		
 		var $firstEmbed = $('iframe:first, embed:first, object:first', this).clone();
 		
+		//autoplay and disable annotations
 		var newSrc = $firstEmbed.attr('src');
 		if ( newSrc.indexOf('?')==-1 ) {
-			newSrc += '?autoplay=1';
+			newSrc += '?autoplay=1&iv_load_policy=3';
 		} else {
-			newSrc += '&autoplay=1';
+			newSrc += '&autoplay=1&iv_load_policy=3';
 		}
 		
 		$firstEmbed.attr('src', newSrc );
@@ -37,7 +49,67 @@ jQuery(document).ready(function ($) {//important to pass the $ because somewhere
 	$('#videoModal').on('hidden', function() {
   	  $('iframe, embed, object', '#videoModal').remove();
     });
+		
+	//fix toggle links
+	$('h2.toggleLink a')
+		.attr('href', '#')
+		.removeAttr('onclick')
+		.unbind()
+		.on('click', function(e){
+			e.preventDefault();
+			var $thisH2 = $(this).parents('h2:first');
+			var $thisA = 	$(this); 
+			$thisH2.next('div:first').fadeToggle(300, function(){
+				$thisA.toggleClass('collapsed');
+				/*
+				if ( $(this).is(':visible') ) {
+					$('img[src*=collapse]', $thisA).show();
+					$('img[src*=expand]', $thisA).hide();
+				} else {
+					$('img[src*=collapse]', $thisA).hide();
+					$('img[src*=expand]', $thisA).show();
+				}
+				*/
+				
+			});
+		})
 	
+	//create sections for each vertical
+	$('table.basicTable').each(function(){
+		splitTable( $(this) );
+	});
+	
+	function splitTable($el) {
+		var $mainTable = $el;
+		
+		$('h2:first', $mainTable).each(function(){
+			var $theRow = $(this).parents('tr:first');
+			var splitBefore = $theRow.prevAll('tr').length;
+			var splitBy = splitBefore + 1;
+			var rowsBefore = $mainTable.find ( "tr" ).slice( splitBefore );
+		    var rows = $mainTable.find ( "tr" ).slice( splitBy );
+		    
+		    $headerTable= $("<table class='basicTable'></table>");
+		    $headerTable.insertAfter($mainTable).append(rowsBefore);
+		    
+		    $appendedTable= $("<table class='basicTable products-list'></table>");
+		    $appendedTable.insertAfter($headerTable).append(rows);
+			//$mainTable.find ( "tr" ).slice( splitBy ).remove();
+		    
+		    if ( $('h2', $appendedTable).size()>0 ) {
+		    	splitTable( $appendedTable );
+		    } 
+		});
+	}
+	
+	$('h2', '.basicTable').on('click', function(){
+		$el = $(this);
+		$parentTable = $el.parents('table:first');
+		$parentTable.next('table').fadeToggle(300, function(){
+			$el.toggleClass('expanded');
+		});
+	});
+
 });
 
 function includeJS(src,callback) {
