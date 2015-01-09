@@ -171,6 +171,35 @@ h1, h2, h3, h4, h5, h6 {
 	display: block;
 }
 
+.toggleIndicator {
+	color: @lighter-black !important;
+	.gothamMedium() !important;
+
+	&:before {
+		.rotate(90deg);
+		content: '›';
+		font-size: 20px;
+		display: inline-block;
+		.ie7-inline-block();
+		vertical-align: middle;
+		padding-right: 0px;
+		padding-top: 13px;
+		margin-left: 20px;
+		padding-left: 0px;
+		margin-top: -1px;
+	}
+	
+	&.collapsed {
+		&:before {
+			.rotate(0deg);
+			vertical-align: baseline;
+			margin-left: 11px;
+			margin-right: 9px;
+			padding-top: 4px;
+		}
+	}
+}
+
 .pageWidth {
 	border-top: none;
 	
@@ -525,23 +554,51 @@ div#templateContent01Panel03 {
 }
 
 .enroll-now-instructions {
-	
-	td {
-		padding: 10px;
+	tr {
+		vertical-align: top;
 		
-		&:first-child {
-			border-right: 1px solid #ddd;
-		}
-		
-		+ td {
-			.gothamMedium();
-			font-size: 16px;
+		td {
+			padding: 10px;
+			
+			&:first-child {
+				border-right: 1px solid #ddd;
+			}
+			
+			+ td {
+				.gothamMedium();
+				font-size: 15px;
+				width: 25%;
+				
+				@media ( max-width: @mobileWidth ) {
+					font-size: 13px;
+				}
+			}
 		}
 	}
 }
 
-#noticesSection {
+.toggleTrigger {
+	.toggleIndicator();
+	color: @almost-black;
+	
+	&:before {
+		font-size: 16px;
+		margin-top: 1px;
+		margin-left: 9px;
+	}
+	
+	&.collapsed {
+		&:before {
+			margin-left: 0;
+		}
+	}
+}
+
+.notices {
 	font-size: 85%;
+}
+
+#noticesSection {
 	margin-top: 20px;
 }
 
@@ -608,32 +665,7 @@ div#templateContent01Panel03 {
 	}
 	
 	.toggleLink a {
-		color: @lighter-black !important;
-		.gothamMedium() !important;
-	
-		&:before {
-			.rotate(90deg);
-			content: '›';
-			font-size: 20px;
-			display: inline-block;
-			.ie7-inline-block();
-			vertical-align: middle;
-			padding-right: 0px;
-			padding-top: 13px;
-			margin-left: 20px;
-			padding-left: 0px;
-			margin-top: -1px;
-		}
-		
-		&.collapsed {
-			&:before {
-				.rotate(0deg);
-				vertical-align: baseline;
-				margin-left: 11px;
-				margin-right: 9px;
-				padding-top: 4px;
-			}
-		}
+		.toggleIndicator();
 	
 		img {
 			display: none !important;

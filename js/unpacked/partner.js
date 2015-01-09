@@ -110,6 +110,19 @@ jQuery(document).ready(function ($) {//important to pass the $ because somewhere
 		});
 	});
 
+	$('.toggleTrigger').on('click', function(e){
+		e.preventDefault();
+		
+		var $el = $(this);
+		var $theTarget = $( $(this).attr('href') );
+		
+		if ( $theTarget.size()>0 ) {
+			$theTarget.fadeToggle(300, function(){
+				$el.toggleClass('collapsed');
+			});
+		}
+	});
+	
 });
 
 function includeJS(src,callback) {
