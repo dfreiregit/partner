@@ -5,6 +5,8 @@ jQuery(document).ready(function ($) {//important to pass the $ because somewhere
 	includeJS("https://www.ecornell.com/wp-content/plugins/ecustom-embed/js/jQuery.tubeplayer.min.js");
 	includeJS("https://www.ecornell.com/wp-content/plugins/ecustom-embed/js/ecustom-embed.js");
 	
+	$('a', '.cancelTransfer').attr('href', 'http://ecornell.force.com/help/articles/FAQ/Organizational-Partner-Drop-Transfer-Policy/');
+	
 	$('.welcome').insertAfter( $('.contactInfo:last') );
 	$('.welcome').prepend('<img src="https://s3.amazonaws.com/ecornell/partner_pages/welcome-thumb.jpg" />');
 	$('.welcome').after('<div class="about-ecornell"><h5>About eCornell</h5><p>eCornell\'s online courses are authored by faculty from Cornell University\'s ' + 
