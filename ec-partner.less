@@ -468,11 +468,11 @@ div#templateContent01Panel03 {
 	
 		
 		> .span6 {
-			width: 43%;
+			width: 55%;
 			margin: 0;
 			
 			&.text-wrapper {
-				width: 57%;
+				width: 45%;
 				margin: 0;
 			}		
 			
@@ -496,9 +496,24 @@ div#templateContent01Panel03 {
 		.cta-left {
 			padding: 0 0 8px 20px;
 			
+			@media ( min-width:997px ) {
+				line-height: 16px
+			}
+			
+			@media ( min-width:980px ) and ( max-width:996px )  {
+				line-height: 15px;
+				font-size: 12.5px;
+				padding-right: 2px;
+			}
+			
+			@media ( min-width:768px ) and ( max-width:930px )  {
+				line-height: 15px;
+				font-size: 12px;
+			}
+			
 			h4 {
-				padding-top: 16px;
-				padding-bottom: 2px;
+				padding-top: 12px;
+				padding-bottom: 6px;
 				margin: 0;
 				font-size: 15px;
 				color: @lighter-black;
