@@ -16,7 +16,7 @@ jQuery(document).ready(function ($) {//important to pass the $ because somewhere
 	
 	$('#noticesSection').insertAfter( $('.courseCertListing:first') );
 	
-	$('.cta-left a.cobalt-btn, .cta-left a.red-btn').each(function(){
+	$('.post-listing').each(function(){
 		$cloneBtn = $(this).clone();
 		$cloneBtn.insertAfter( $('.courseCertListing:first') );
 	});
