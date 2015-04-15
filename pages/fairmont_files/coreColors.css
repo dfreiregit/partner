@@ -1,0 +1,108 @@
+/*
+	A site should only be using a certain few colors. Below is a list of those colors along with specific
+	background color information. These values can be changed here and will reflect directly on the site.
+	
+*/
+
+
+/* Below is a list of Foreground Colors */
+
+/* This color can be used for Page titles (headers) */
+.FgColorStrong_1 {
+	color:#5995BB;
+}
+.FgColorStrong_2 {
+	color:#3C74A8;
+}
+
+.FgColor_1 { 
+	color:#576228;
+}
+.FgColor_2 {
+	color:#E86E05;
+}
+
+/* Typically used for Sub Headings */
+.FgColor_3 {
+	color:#B35404;	
+}	
+
+
+.FgColorLightest_1 {
+	color:#FFFFFF;
+}
+	
+
+/* Below is a list of Background colors. */
+/* Body Background Color*/
+.BgColorRootBody {
+	background-color: white;
+}
+
+
+/* Used for tabs, etc... */
+.BgColorStrong { 
+	background-color: #5593cc;
+}
+
+/* Used for tabs, etc... */
+.BgColorStrong_0 { 
+	background-color: #3573AC;
+}
+
+/* Used for tabs, etc... */
+.BgColorStrong_1 { 
+	background-color: #5995BB;
+}
+
+/* Used for background for certain boxes, the header area, etc... */
+.BgColorStrong_2 {
+	background-color:white;
+	
+}
+
+.BgColorStrong_3 {
+	background-color:#9CB9D3;	
+}
+
+/* Currently only reqired for the footer. */
+.BgColorStrong_4 {
+	background-color:#E87D1D;
+}
+
+.BgColorLight {
+	background-color: #5593cc;
+}
+
+
+/* Used as a bg color in boxes, etc... */
+.BgColorLight_1 {
+	background-color: #D2E0EB;
+}
+.BgColorLight_2 {
+	background-color: #dad9da;
+}
+
+/* Ultra light color for boxes that neat to be slightly noticed */
+.BgColorLight_3 {
+	background-color: #EFEFEF;
+}
+
+.BgColorLightest_1 {
+
+}
+
+/*	These Background Colors are for Table Headers... Ideally the same color as a strong BG color above. */
+
+.BgColorTable_1 {
+	background-color:#004A8D;
+}
+
+/* These colors are for Border  */
+
+.BorderColor_1 {
+	border-color:#EFEFEF;	
+}
+
+
+

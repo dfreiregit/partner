@@ -1,0 +1,277 @@
+
+/******************************************************************************************************************** 	README	*********************
+To override the default style classes here with a group-specific styling, the group will need to upload their own groupLandingPage.css 
+through Staff View > Enrollment Manager > Group Profile > Upload File.
+*/
+
+/***************** Default positioning and column width styles */
+
+.pageWidth 			{	width: 960px; 	}	/* 	|------------THIS-----------| */
+.minorColumnWidth	{	width: 180px;	}	/* 	|-THIS-|			   		| */
+.majorColumnWidth	{	width: 600px;	}	/* 	|	   |----THIS-----|		| */
+.contentWidth		{	width: 780px;	}	/* 	|	   |--------THIS--------| */
+
+.bodyWrapper {
+	text-align: center; 
+	margin: auto;
+}
+
+.pageWrapper {
+	text-align: left;
+	margin: auto;
+	border-left: 1px solid #807f83;
+	border-right: 1px solid #807f83;
+	background-color: #ffffff;
+}
+
+/***************** Default styles for navigation tile */
+
+.topNavigationGroup {
+	height: 30px;
+}
+
+.topLeftNavigation {
+	float: left;
+	padding-top: 7px;
+	border-left: none;
+}
+
+.topLeftNavigation a {
+	padding: 0 2px 0 5px;
+	border-left: 1px solid #807f83;
+}
+
+.topLeftNavigation a.firstNaviLink {
+	border-left: none;
+}
+
+.topRightNavigation {
+	float: right;
+	padding: 5px 8px 0 0;
+}
+
+.fullContentWidth{
+	width: 98%;
+	}
+
+
+/***************** Default styles for header tile */
+
+.headerGroup {
+	margin: 0 auto;
+}
+
+.schoolCorporateLogo {
+	margin: 2px;
+	float: left;
+	width: 176px;
+	height: 150px;
+}
+
+.schoolCorporateLogo img {
+	width: 173px;
+	height: auto;
+}
+
+.schoolCorporateHeader {
+	margin: 2px;
+	float: left;
+	width: 596px;
+	height: 150px;
+}
+
+.schoolCorporateHeader img {
+	width: 593px;
+	height: 148px;
+	border-style:solid;
+ 	border-width:1px;
+}
+
+.groupCorporateLogo {
+	margin: 2px;
+	float: left;
+	width: 176px;
+	height: 150px;
+}
+
+.groupCorporateLogo img {
+	width: auto;
+	height: auto;
+	max-width: 170px;
+	max-height: 150px;
+}
+
+/*****************Default styles for footer */
+
+.footer {
+	height: 50px;
+	background-color: transparent;
+	margin: 2px;
+	border-style: solid;
+ 	border-width: 2px 0 0 0;
+ 	bottom: 0px;
+ 	display: inline-block;
+ 	width: 956px;
+ 	text-align: center;
+}
+
+/***************** Default styles for content tile */
+
+.segmentContainer01{
+	float: left;
+    width: 176px;
+    padding: 2px;
+    height: 100%;
+}
+
+.segmentContainer01Content{
+	border: 0px;
+	height: 100%;
+	background-color: transparent;
+	padding-left: 10px;
+	width: 165px;
+}
+	
+.segmentContainer03{
+    float: left;
+    width: 776px;
+    height: 100%;
+    padding: 2px;    
+}
+
+
+.segmentContainer03Content{
+    padding: 2px;
+    width: 772px;
+}
+
+.courseCertListing {	
+	background-color: transparent;
+	margin: 0px;
+}
+
+#templateContent01{
+	height: auto;
+	min-height: 200px;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+#templateContent01Panel01{
+	height:	100%;
+	position: absolute;
+}
+
+
+#templateContent01Panel03{
+	height: auto;
+	padding-left: 179px;
+	padding-right: 2px;
+}
+	
+	
+/** Any messages on the landing page, shown on content tile */
+#landingPageMessage {
+	padding: 10px 0 0 10px;
+	font-weight: bold;
+}
+
+
+/** Certificate profile */
+#certProfile {
+	width: 100%;
+}
+
+/** Course basket */
+#publicCourseBasketForm {
+	width: 100%;
+}
+
+/** Advanced course search */
+#publicCourseAdvancedSearchForm {
+	width: 100%;
+}
+
+/** Request info */
+#studentRequestInformationForm {
+	width: 100%;
+}
+
+/** Payment */
+#publicPaymentInfoForm {
+	width: 100%;
+}
+/** Login */
+#studentLogonForm {
+	width: 100%;
+}
+
+/** Abbreviated profile */
+#abbreviatedStudentProfileForm {
+	width: 100%;
+}
+
+/** Completed information request */
+#requestInformationCompleted {
+	width: 100%;
+}
+
+/** Public profile */
+#publicPersonalInfoForm {
+	width: 100%;
+}
+
+/** Receipt */
+#publicPaymentReceiptForm {
+	width: 100%;
+}
+
+/** Certificate search */
+#publicCertificateSearchForm {
+	width: 100%;
+}
+
+/** Powered by Destiny One style */
+.poweredBy {
+	position: absolute;
+	bottom: 24px;
+	width: 100%;
+}
+
+/** Header style */
+.portalPageHeader {
+    font-family: Arial, Verdana, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #666666;
+    text-align: left;
+    height: 39;
+    vertical-align: top;
+    margin: 15px 0em .25em 0em;
+    margin: 15px 0px 15px 0px;	
+}
+
+/** Black border */
+.blackBorder {
+  border-color:#000;
+  border-style:solid;
+  border-width:1px;
+  padding-top:1px;
+  padding-bottom: 1px;
+  padding-left:10px;
+  padding-right:10px;
+  font-family: Arial;
+  font-size: 10pt;
+}
+
+.basicTable {
+    cellpadding:    0;
+    cellspacing:    0;
+    border:         0;
+    width:          100%; 
+}
+
+.tableCellSmall {
+    width:     200px;
+}

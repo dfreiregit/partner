@@ -1,0 +1,89 @@
+/*
+	A site should only use a certain amount of fonts and sizes. Below is 
+	a standard list of the most common sizes. 
+	
+	Note: no color information is set here. Please see coreColors.css for color
+	information
+	
+	Author: Fward.
+*/
+
+/* 	---------------------------------------------------------------
+	Below are particular font sizes used on the site. This allows 
+	a consistent look throughout the pages. 
+	--------------------------------------------------------------- */	
+
+.FontTiny {
+	font-size:7pt;
+}
+
+.FontSmall {
+	font-size:8pt;
+}
+
+.FontStandard {
+	font-size:11pt;
+}
+
+.FontBig {
+	font-size: 18px;
+}
+
+.FontLarge {
+	font-size:18pt;
+}
+
+/* 	--------------------------------------------------------------- 
+	Below is font formatting info (Bold, italic, underline, etc...) 
+	--------------------------------------------------------------- */
+
+.FontBold {
+	font-weight:Bold;
+}
+
+.FontItalic {
+	font-style:italic;
+}
+.FontStyleNormal {
+	font-style:normal;
+}
+
+/* 	--------------------------------------------------------------- 
+ 	Fonts might have particular styles. This section allows you to 
+ 	add	different font styles. 
+   	--------------------------------------------------------------- */
+
+.FontStyle_1 {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+}
+
+.FontStyle_2 {
+	font-family:Arial, Verdana	
+}
+
+.FontAlignLeft {
+	text-align:left;
+}
+.FontAlignCenter {
+	text-align:center;
+}
+.FontAlignRight {
+	text-align:right;
+}
+
+/* 	--------------------------------------------------------------- 
+ 	This section controls how a fonts a href will look. 
+   	--------------------------------------------------------------- */
+
+.FontAHrefFormat_1 {
+	text-decoration:none;	
+}
+.FontAHrefFormat_2 {
+	text-decoration:underline;	
+}
+
+
+
+
+
+

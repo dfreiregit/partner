@@ -1,0 +1,33 @@
+/*used to create the hidden warning that shows up when user tabs over a link that opens a popup*/
+.popupWarning{
+	position:relative;
+	white-space: nowrap;
+}
+
+.popupWarning span.hiddenP {
+	text-decoration:none;
+	position: absolute;
+	left: -9000px;
+	width: 0;
+	overflow: hidden;
+}
+
+
+.popupWarning:focus span.hiddenP{
+	text-decoration:none;
+	display:block;
+	border: solid 1px;
+	position:absolute;
+	top:-.3em; left:110%; width:auto;
+	background-color:white;
+	color:black;
+	text-align: center;
+}
+
+.popupWarning:active span.hiddenP{
+	text-decoration:none;
+	position: absolute;
+	left: -9000px;
+	width: 0;
+	overflow: hidden;
+}

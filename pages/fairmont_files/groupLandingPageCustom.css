@@ -1,0 +1,321 @@
+/** Inactive styles **/
+@import url("/css/corporate/stylesInactive.css");
+
+
+/**
+*  Overrides of sections.css
+*/
+.bodyWrapper {
+	background-color:  #F1F0F0;
+	margin: 0px;
+}
+
+.pageWrapper {
+	background-color: white;
+	border: 1px solid #DDD;
+}
+
+.pageWidth {
+	width: 1000px;
+}
+
+/******************************************************************************************************************** 	README	*********************	
+  School customization of default groupLandingPage.css 
+*/
+.portalPageHeader, h1 {
+	font-family: Colfax-Medium;
+	font-size: 14px;
+	font-weight: normal;
+	color: #000000;
+}
+
+/** Footer **/
+.footer {
+	height: 0px;
+	border: none;	
+	margin: 0px;
+}
+
+.footer .sectionWrapper {
+	width: 100%;
+}
+
+.topNavigationGroup {
+	background-color:  white;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+/** Content01 **/
+#templateContent01 {
+	margin-top: 15px;
+	min-height: 450px;
+	width: auto;
+	position: static;
+	overflow: visible;
+}
+
+#templateContent01Panel01 {
+	height: auto;
+	position: static;
+	padding: 0px;
+	width: 200px;
+}
+
+#templateContent01Panel03 {
+	padding: 0px;
+	width: 780px;
+	border: 0px;
+	overflow: hidden;
+}
+
+/** Content Pane **/
+.segmentContainer03Content  {
+	height: 100%;
+	background-color: white;
+	border: 0px;
+}
+
+/** Header  **/
+.headerGroup {
+	margin: 10px;
+}
+
+.schoolCorporateLogo  {
+	height: 91px;
+	width: 180px;
+}
+
+.schoolCorporateLogo img {
+	width: 175px;
+	height: auto; 
+	border: 0px;	
+}
+
+.groupCorporateLogo {
+	height: 91px;
+	text-align: center;
+	width: 677px;
+}
+.groupCorporateLogo img {
+	height: 91px;
+	width: auto;
+	border: 0px;	
+}
+
+.schoolCorporateHeader {
+	width: 91px;
+	height: 91px;
+	float: right;
+}
+.schoolCorporateHeader img {
+	width: 91px;
+	height: 91px;
+	border: 0px;
+}
+
+.poweredBy {
+	position: static;
+	width: auto;
+	margin-bottom: 24px;
+}
+
+/** Side Bar **/
+#leftPanelContent ul {
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+#leftPanelContent ul li {
+	padding-bottom: 6px;
+}
+
+#leftPanelContent h1 {
+	color: #3b3b3b;
+	font-family: Colfax-Bold;
+}
+
+#leftPanelContent h1 {
+	margin: 0px;
+}
+
+#leftPanelContent h4 {
+	text-align: center;
+	margin: 0px;
+}
+#leftPanelContent .contactInfo {
+	padding-top: 3px;
+}
+.welcome img {
+	width: 175px;
+	height: auto;
+}
+
+.iconItem {
+	padding-left: 24px;
+	background: no-repeat left top;
+}
+
+.iconItem.phoneContact {
+	background-image: url(/images/custom/phone.png);	
+}
+
+.iconItem.emailContact {
+	background-image: url(/images/custom/email.png);	
+}
+
+.iconItem.faq {
+	background-image: url(/images/custom/FAQ.png);	
+}
+
+.iconItem.cancelTransfer {
+	background-image: url(/images/custom/policy.png);	
+}
+
+.iconItem.myCourses {
+	background-image: url(/images/custom/courses.png);	
+}
+
+.iconItem.myCourses {
+	background-image: url(/images/custom/courses.png);	
+}
+
+.iconItem.chat {
+	background-image: url(/images/custom/chat.png);	
+}
+
+/** Content Pages **/
+.courseCertListing {
+	background-color: transparent;
+	margin: 0px;
+	border-style: solid;
+	border-width: 2px 0 0px 0;
+	border-color: #3b3b3b;
+}
+
+h2.toggleLink a:link, h2.toggleLink a:visited, h2.toggleLink a:active
+{
+	font-family: NewJuneMedium-Italic;
+	font-size: 14px;
+	background-color: transparent;
+	color: #ea1e24;
+}
+
+#certificateListing, #courseListing {
+	padding-left: 28px;
+}
+
+#certificateListing .tTitle, #courseListing .tTitle{
+	display: none;
+}
+
+#certificateListing, #courseListing {
+	padding-left: 28px;
+}
+
+#certificateListing h2, #courseListing h2{
+	padding-left: 0px !important;
+	margin-left: 0px !important;
+}
+
+#certificateListing h2, #courseListing h2 {
+	font-family: Colfax-Medium;
+	font-size: 14px;
+	font-weight: normal;
+	color: #ea1e24;
+}
+
+#courseListing img[src="/images/1x1.gif"]+br, #courseListing img[src="/images/1x1.gif"] {
+	display: none;
+}
+
+#certProfile #certificateStreamTable tr td:first-child {
+	display: none;
+}
+#certProfile .certificateBundle+br+br {
+	display: none;
+}
+#certificateListing a.availableLink {
+     color: rgb(234, 30, 36);
+     cursor: auto;
+     font-family: Colfax-Medium, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+     font-size: 12px;
+     font-style: normal;
+     font-weight: normal;
+     height: 20px;
+     line-height: 20px;
+     text-decoration: none;
+}
+
+#certificateListing a.availableLink:hover {
+     text-decoration: none;
+     color: #ff3137;
+}
+
+#certificateListing a.availableLink:after {
+    content: '\203A';
+    font-family: 'NewJuneMedium-Italic';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 20px;
+}
+
+#courseListing a.availableLink {
+     color: rgb(234, 30, 36);
+     cursor: auto;
+     font-family: Colfax-Medium, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+     font-size: 12px;
+     font-style: normal;
+     font-weight: normal;
+     height: 20px;
+     line-height: 20px;
+     text-decoration: none;
+}
+
+#courseListing a.availableLink:hover {
+     text-decoration: none;
+     color: #ff3137;
+}
+
+#courseListing a.availableLink:after {
+	content: '\203A';
+    font-family: 'NewJuneMedium-Italic';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 20px;
+}
+
+/** General Styles **/
+.blackBorder {
+	font-family: Colfax-Regular;
+	font-size: 12px;
+	color: #000000;
+	border-color: #3b3b3b;
+	border-style: solid;
+	border-width: 2px;
+	font-weight: normal;
+}
+
+img[src="/images/1x1.gif"], img[src="/images/1x1.gif"]+br {
+	display: none;
+}
+
+/** Overrides of client_custom for footer **/
+#uc-footer-wrapper {
+  width: 1000px;
+}
+
+#uc-footer .clientFooter {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+#uc-footer .clientFooter .social-links {
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+}

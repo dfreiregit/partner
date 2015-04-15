@@ -1,0 +1,411 @@
+/* This file list the default styles used in the core tiles.  If school requires overriding these styles, DO NOT override the entire file but override the class in the school.css. */
+.clearfix{
+    *zoom:1
+}
+
+.clearfix:before,
+.clearfix:after {
+    display:table;
+    content:"";
+    line-height:0
+}
+
+.clearfix:after{
+    clear:both
+}
+
+.hidden {
+    display: none;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.studentProfile-address-info input[readonly],
+.studentProfile-address-info select[readonly],
+
+.superAbbreviatedProfile-address-info input[readonly],
+.superAbbreviatedProfile-address-info select[readonly]{
+    border: 1px solid #CCCCCC;
+    background-color: #E2E2E2;
+}
+
+
+
+/* Styles for addressLookup API */
+.addressLookupSeparator {
+    display: none;
+}
+
+.instructorProfile-address-info .addressLookupContainer {
+    width: 80%;
+}
+.superAbbreviatedProfile-address-info .addressLookupContainer {
+    width: 80%;
+}
+.studentProfile-address-info .addressLookupContainer {
+    width: 90%;
+}
+
+.preferredNameContent {
+	padding-left: 5px;
+}
+
+#appReferences .referenceStatus {
+	width: 200px;
+	font-style: italic;
+	font-size: 8pt;
+}
+
+#studentPortalAppInstance #appInstanceLeftNav {
+	vertical-align: top;
+	width: 210px;
+	text-align: center;
+}
+
+#courseBasketAppInstance #appInstanceLeftNav {
+	vertical-align: top;
+}
+
+#studentPortalAppInstance #applicationInstanceToc {
+	width: 200px;
+}
+
+#courseBasketAppInstance #applicationInstanceToc {
+	width: 200px;
+}
+
+#studentPortalAppInstance .applicationInstanceTocCell {
+	width: 184px;
+}
+
+#courseBasketAppInstance .applicationInstanceTocCell {
+	width: 200px;
+}
+
+#studentPortalAppInstance #appInstancePageNameCell {
+	text-align: left;
+}
+
+#courseBasketAppInstance #appInstancePageNameCell {
+	text-align: left;
+	width: 70%;
+}
+
+#studentPortalAppInstance #appInstancePageStatusCell {
+	text-align: right;
+}
+
+#courseBasketAppInstance #appInstancePageStatusCell {
+	text-align: right;
+	width: 30%;
+}
+
+#studentPortalAppInstance .appInstancePageBigText {
+	width: 98%;
+}
+
+#courseBasketAppInstance .appInstancePageBigText {
+	width: 98%;
+}
+
+#courseBasketAppInstance #buttonsPanel {
+	width: 100%;
+}
+
+#appInstanceApplicationContent #ResetthisPage{
+	padding-right: 2px;
+	white-space: nowrap;
+}
+
+#courseBasketAppInstance #buttonsPanel td {
+	width: 50%;
+}
+
+#buttonsPanel td {
+	padding-bottom: 5px;
+}
+
+#externalPaymentWindow.CyberSourceSAPaymentProcessorManager {
+    height: 1390px;
+    overflow-y: scroll;
+}
+
+#appReferenceHeader {
+	background-color: #999999;
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #ffffff;
+	padding: 5px;
+}
+
+#appReferenceHeader a:link
+#appReferenceHeader a:visited {
+	background-color: #999999;
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #ffffff;
+}
+
+#appReferenceSubmittorInfo label {
+	font-weight: bold;
+}
+
+#appReferenceSubmittorInfo .labelCol {
+	width: 100px;
+}
+
+.applicationReferencePortalHeaderLogos {
+	vertical-align: middle;
+	padding-left: 10px;
+}
+
+.paymentTableDesc {
+	text-align: center;
+	margin: 0 auto;
+	width: 100%;
+	border: 1px solid #000000;
+}
+.basketMarketingQuestionRadioFieldset input {
+    margin-left: 20px;
+}
+#applicationInstanceCommonTable #appInstanceNavRow {
+	display:table-cell;
+    width: 30%;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+}
+#applicationInstanceCommonTable #appInstanceApplicationContent {
+	display:table-cell;
+    width: 69%;
+    min-width: 69%;
+    margin: 0px;
+    padding: 0px;
+    float: right;
+}
+#appReferenceSubmittorInfo,
+#applicationInstanceCommonTable {
+	width: 100%;
+    margin: 0px 0px 15px 10px;
+}
+
+#applicationListingCheckout td {
+    padding-bottom: 5px;    
+}
+
+.applicationFileUpload {
+    width: 300px;
+}
+
+#RequestDrop,
+#RequestTransfer {
+	white-space: nowrap;
+}
+
+fieldset.nopadding{
+	padding: 0px;
+	margin: 0px;
+}
+
+legend {
+    white-space: normal; 
+    width: 100%;
+}
+
+legend span {
+    display:block;
+    width: 100%;
+}
+
+legend span.required{
+    display:inline;
+    width: 100%;
+}
+
+.requiredSymbolWrapper{
+    padding-left: 2px;
+    font-size: 0;
+    line-height: normal;
+    display: inline;
+}
+
+#publicStudentContactMethod legend span.required,
+#publicStudentContactMethod legend span.requiredSymbolWrapper {
+    width: auto;	
+}
+
+.portalConferenceListHeader {
+    font-size: 14px;
+    color: #B5231D;
+}
+
+.portalConferenceList {
+    width: auto;
+    padding-left: 10px;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.portalConferenceListRow {
+    float: left;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.portalConferenceListRowColumn {
+    width: 17%;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.portalConferenceListRowColumn.conferenceDateColumn {
+    width: 25%;
+}
+
+.portalConferenceListColumnSpacer {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.instructorTimetableFilterDiv {
+    padding-bottom: 10px
+}
+
+/** Styling for basket info data (checkout screens) **/
+
+table.basketInfo {
+}
+
+table.basketInfo th {
+	text-align: left;
+}
+
+table.basketInfo td.xshort,table.basketInfo th.xshort {
+	width: 60px;
+}
+
+table.basketInfo td.short,table.basketInfo th.short {
+	width: 120px;
+}
+
+table.basketInfo td.medium,table.basketInfo th.medium {
+	width: 240px;
+}
+
+table.basketInfo td.long,table.basketInfo th.long {
+	width: 360px;
+}
+
+table.basketInfo td.xlong,table.basketInfo th.xlong {
+	width: 540px;
+}
+
+table.basketInfo td.amount, table.basketInfo th.amount {
+	text-align: right;
+}
+
+table.basketInfo td.cartItemName {
+	font-weight: bold;
+}
+
+table.basketInfo td, table.basketInfo th {
+	padding: 6px;
+}
+table.basketInfo td.quantitySelect {}
+
+table.basketInfo th.quantitySelect {
+	text-align: center;
+}
+
+table.basketInfo div.quantityContent {
+	position: relative;
+	left: 65px;
+}
+
+
+table.basketInfo td.quantitySelect button {
+	text-align: left;
+	padding-left: 0px;
+}
+
+table.basketInfo tr.totals td {
+	border-top: 1px solid #807F82;
+	text-align: right;
+	font-weight: bold;
+}
+
+table.courseBasketTable #KeepShopping {
+	float: left;
+}
+
+.rightAlignFloatRight {
+    text-align:right;
+    float:right;
+}
+
+#learningGoalsCheckbox {
+    width: 10px; 
+    float: left;
+}
+                 
+#learningGoalsCheckboxLabel {
+    padding-left: 20px; 
+    width: 300px
+}
+
+#secretCodeInstruction {
+    background-color: #FFFF00;
+    font-size: 16px !important;
+}
+
+.studentPrivacy .privacyLabel {
+    float: none;
+}
+
+#privacyQuestion ul li{
+    margin-top: 10px;
+}
+
+.specialRequestFulfillment.form input[type="text"],
+.specialRequestFulfillment.form select {
+    width: 150px;
+}
+
+.specialRequestFulfillment.form .subscript {
+    color: #808080;
+}
+
+.specialRequestFulfillment.form input.numOfCopies {
+    width: 30px;
+}
+
+.specialRequestFulfillment.form input.areaCode,
+.specialRequestFulfillment.form input.extension {
+    width: 50px;
+}
+
+.specialRequestFulfillment.form .requestDetail table {
+    margin: 0;
+}
+
+.specialRequestFulfillment.form .requestDetail .tCell td {
+    vertical-align: bottom;
+}
+
+#sectionSchedulePopupDatesTable {
+	width: 100%;
+}
+
+#sectionSchedulePopupDatesTable th {
+	text-align: left;
+}
+
+.applicationInstance_conditionalSection {
+    margin-left: 20px;
+}
+

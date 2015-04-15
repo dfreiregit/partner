@@ -1,0 +1,759 @@
+body {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	background-color: #F1F0F0;
+	font-family: Arial, Helvetica, Verdana, "Bitstream Vera Sans", sans-serif;
+	font-size: 12px;
+	line-height: 150%;
+}
+
+p { 
+	display: block;
+    margin: 0.5em 0;
+}
+
+
+.copyright {
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 9px;
+	text-align: center;
+	vertical-align: top;
+	color: #000000;
+}
+
+A:link,
+A:visited,
+A:active {
+	color: #807f83;
+	background: transparent;
+	text-decoration: none;
+}
+
+A:hover {
+	color: #B5231D;
+	background: transparent;
+	text-decoration: underline;
+}
+
+A:link.removeFromBasket,
+A:visited.removeFromBasket,
+A:active.removeFromBasket {
+	color: #c2b7a1;
+	font-weight: bold;
+}
+
+.globalNavParent {
+	width: 175px;
+	height: 21px;
+	color: #ffffff;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: 500;
+}
+
+.globalNavParent a:link {
+	color: #ffffff;
+}
+
+#studentLogin {
+	background-color: #999999;	
+/*	margin-left: 10px;*/
+}
+
+#instructorLogin {
+	background-color: #999999;	
+/*	margin-left: 10px;*/
+}
+
+.mainTitle {
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 33px;
+	margin:26px 0px 11px;
+}
+
+.mainTitleFirstLine {
+	text-align: left;
+	/* padding-left: 190px; 
+	padding-left: 70px;*/
+	
+}
+
+.mainTitleSecondLine {
+	text-align: left;
+	/* padding-left: 300px; */
+	padding-left: 60px;
+	padding-bottom: 30px;
+}
+
+.submainText {
+	font-family: sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #999999;
+	height: 10px !important;
+	letter-spacing: 0.253cm;
+}
+
+.weather {
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #999999;
+}
+
+input.loginButton, input.loginButtonHover,.loginButton, .loginButtonHover {
+	color: #ffffff;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 12px;
+	font-weight:bold;
+	border: 0px;
+	background: transparent url("/images/forms/login_off.gif") no-repeat;
+	width: 80px;
+	height: 24px;
+
+}
+
+input.loginButtonDown, input.loginButtonClick,.loginButtonDown, .loginButtonClick {
+	color: #ffffff;
+	font-family: Arial, Verdana, sans-serif;
+	font-weight:bold;	
+	font-size: 12px;
+	border: 0px;
+	background: transparent url("/images/forms/login_on.gif") no-repeat;
+	width: 80px;
+	height: 24px;
+	
+}
+
+input.portalLoginButton,  input.portalLoginButtonDown,.portalLoginButton,  .portalLoginButtonDown {
+	color: #ffffff;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 12px;
+	font-weight:bold;
+	border: 0px;
+	background: transparent url("/images/forms/portal_login_off.gif") no-repeat;
+	width: 82px;
+	height: 28px;
+}
+
+input.portalLoginButtonHover,.portalLoginButtonHover {
+	color: #ffffff;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 12px;
+	border: 0px;
+	background: transparent url("/images/forms/portal_login_on.gif") no-repeat;
+	width: 82px;
+	height: 28px;
+}
+
+input.googleButton,.googleButton {
+	color: #ffffff;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 10px;
+	border: 0px;
+	background: transparent url("/images/forms/go_off.gif") no-repeat;
+	width: 39px;
+	height: 20px;
+}
+
+input.googleButton,input.googleButtonDown,.googleButton,.googleButtonDown {
+	color: #ffffff;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 10px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background: transparent url("/images/forms/go_off.gif") no-repeat
+		;
+	width: 39px;
+	height: 20px;
+}
+
+input.googleButtonHover,.googleButtonHover {
+	color: #ffffff;
+	font-family: Arial, Verdana, sans-serif;
+	border-style: none;
+	font-size: 10px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background: url("/images/forms/go_on.gif") no-repeat center top;
+	width: 39px;
+	height: 20px;
+}
+
+#mainTab {
+ margin-left:5px;
+ margin-right:5px;
+}
+
+.yui-content a:link {
+	color: #666666;
+	text-decoration: none;
+}
+
+
+.yui-content a:hover {
+	color: #000000;
+	text-decoration: none;
+}
+
+
+/* popup styles */
+.popupCell {
+	font-family: Arial; 
+	background-color: #005758;
+	color:#ffffff;
+	padding:2px;
+	border:1px solid #ffffff;
+}
+
+popupClose {
+	font-family: Arial; 
+	background-color: #000000;
+}
+
+.popupTitle {
+	font-family: Arial; 
+	background-color: #005758;
+	color:#ffffff;	
+
+}
+
+.popupText {
+  font-family: Arial;
+  font-size:8pt;
+  color:#ffffff;
+}
+
+.popupCloseFont {
+	font-family: Arial;
+  font-size:8pt;
+}
+
+.popupCaptionFont {
+  font-family: Arial;
+  font-size:8pt;
+  font-weight:bold;
+}
+
+
+
+.checkoutSubNavActive {
+    float: left;
+	font-family: Arial, Helvetica, sans-serif;
+	color:black; 
+	font-weight: bold;
+	font-size:14px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+ 
+
+.checkoutSubNavInactive {
+    float: left;
+	font-family: Arial, Helvetica, sans-serif;
+	color:black;
+	font-size:14px;
+	padding-left: 15px;
+	padding-right: 15px;	
+
+}
+
+
+#globalNav, #globalNav a:link, #globalNav a:visited, #globalNav a:active  {
+    font-family: Arial, Verdana, Helvetica, sans-serif;
+    font-size:12px;
+    font-weight: bold;	
+}
+
+
+.globalNavigation a:visited, .globalNavigation a:link  {
+	color: #ffffff;	
+    font-family: Arial, Verdana, Helvetica, sans-serif;
+    font-size:12px;	
+	text-decoration: none;
+}
+
+.globalNavigation a:hover  {
+	color: #000000;	
+    font-family: Arial, Verdana, Helvetica, sans-serif;
+    font-size:12px;
+	text-decoration: none;    	
+
+}
+
+div.yuimenu {
+    background-color:#CCCCCC;
+    padding:0px;
+    width:175px;
+
+}
+
+div.yuimenu.selected {
+	
+}
+.first-of-type navBecome{
+	
+}
+#navBecome {
+    font-family: Arial, Verdana, Helvetica, sans-serif;
+    font-size:13px;
+	color: #ffffff;
+	background-color: #CC0000;
+    border: solid 4px #CC0000;
+    height:31px;     
+    padding-top: 4px; 
+}
+
+.becomeSubNav {
+    font-family: Arial, Verdana, Helvetica, sans-serif;
+    font-size:13px;
+	color: #ffffff;
+    background-color: #CC0000;
+    height:31px;
+      
+}
+
+.globalNavParent1 {
+    background-color: #CC0000;
+    border: solid 4px #CC0000;
+	border-bottom:  solid 1px #F24A4A;
+    height:31px;
+    padding-top: 2.5px; 
+}
+
+#navBecome li.selected  {
+    border: solid 4px #FF3333;
+	background-color: #FF3333;
+	border-bottom:  solid 1px #F24A4A;
+}
+
+#becomNavLi li.selected  {
+    border: solid 4px #FF3333;
+	background-color: #FF3333;
+	border-bottom:  solid 1px #F24A4A;
+}
+
+#navBecome em.selected {
+  background-color:#CC0000;
+}
+
+#navBecome.selected {
+	border: solid 4px #F24A4A;
+	
+}
+
+.becomeSubNavigation {
+	background-color: #CC0000;
+    border: solid 4px #CC0000;
+    height:25px;
+  
+}
+
+#becomeSubNavigation1.selected, #becomeSubNavigation2.selected, #becomeSubNavigation3.selected, #becomeSubNavigation4.selected,#becomeSubNavigation5.selected{
+    border: solid 4px #FF3333;
+	background-color: #FF3333;
+
+}	
+
+.programsSubNavigation {
+	background-color: #009B7C;
+    border: solid 4px #009B7C;
+    height:31px;
+  
+}
+
+
+#navEmployers, .coursesSubNavigation li {
+    background-color:#3399CC;
+    border: solid 4px #3399CC;
+    height:31px;     
+    padding-top: 4px; 
+}
+
+#navEmpty{
+    height:10px;     
+}
+
+#navEmployers em.selected {
+  background-color:#3399CC;
+}
+
+#navEmployers.selected {
+	border: solid 4px #99CCCC;
+	
+}
+
+#navEmployers li.selected {
+    border: solid 4px #99CCCC; 
+	background-color: #99CCCC;
+	border-bottom:  solid 1px #99CCCC;	
+
+} 
+
+#navEmployers.selected a {
+	border: none 2px;
+}
+
+
+#employersSubNavigation1.selected, #employersSubNavigation2.selected, #employersSubNavigation3.selected, #employersSubNavigation4.selected, #employersSubNavigation5.selected {
+    border: solid 4px #99CCCC; 	
+    background-color: #99CCCC;
+}
+
+.employersSubNavigation {
+	background-color: #3399CC;
+    border: solid 4px #3399CC;
+    height:31px;
+  
+}
+
+.globalNavParent2 {
+	background-color: #3399CC;
+    border: solid 4px #3399CC;
+	border-bottom:  solid 1px #99CCCC;
+
+}
+
+#employersNav.selected {
+	background-color: #99CCCC;
+    border: solid 4px #99CCCC;
+	border-bottom: solid 1px #99CCCC;
+
+}
+
+#navCourses, .coursesSubNavigation {
+    background-color:#CC9933;
+    border: solid 4px #CC9933;     
+    height: 31px;
+    padding-top: 4px; 
+ }
+
+#navCourses.selected {
+	border: solid 4px #FFCC66;
+	
+}
+
+#navCourses li {
+
+    background-color:#CC9933;
+    border: solid 4px #CC9933;     
+   	border-bottom:  solid 1px #FFCC66;
+   	height:31px;
+   	padding-top: 4px;
+   	
+}
+
+#navCourses li.selected {
+    border: solid 4px #FFCC66; 
+	background-color: #FFCC66;
+	border-bottom:  solid 1px #FFCC66;	
+
+} 
+
+
+#navCourses.selected a {
+		border: none 2px;
+}
+
+
+#coursesSubNavigation1.selected, #coursesSubNavigation2.selected, #coursesSubNavigation3.selected, #coursesSubNavigation4.selected, #coursesSubNavigation5.selected {
+    border: solid 4px #FFCC66; 	
+    background-color: #FFCC66;
+}
+
+#navPrograms {
+    background-color:#99CC99;
+    border: solid 4px #99CC99;
+    height: 31px;
+    padding-top: 4px; 
+}
+
+#navPrograms.selected {
+	border: solid 4px #009966;
+	
+}
+
+#navPrograms li {
+    background-color:#009B7C;
+    border: solid 4px #009B7C;     
+   	border-bottom:  solid 1px #99CC99;
+   	height:31px;
+}
+
+#navPrograms li.selected {
+    border: solid 4px #99CC99; 
+	background-color: #99CC99;
+	border-bottom:  solid 1px #99CC99;	
+} 
+
+#navPrograms.selected a  {
+		border: none 2px;
+}
+
+#navGenInfo {
+    background-color:#4E0644;
+    border: solid 4px #4E0644;     
+    font-family: Arial, Verdana, Helvetica, sans-serif;
+    font-size:13px;
+    height:31px;
+    padding-top: 4px; 
+}
+
+#programsSubNavigation1.selected, #programsSubNavigation2.selected, #programsSubNavigation3.selected, #programsSubNavigation4.selected, #programsSubNavigation5.selected {
+    border: solid 4px #99CC99; 	
+    background-color: #99CC99;
+
+}
+
+.genInfoSubNavigation {
+    border: solid 4px #4E0644; 	
+    background-color:#4E0644;
+	height:25px;    
+}
+
+
+#genInfoSubNavigation1.selected, #genInfoSubNavigation2.selected, #genInfoSubNavigation3.selected, #genInfoSubNavigation4.selected, #genInfoSubNavigation5.selected {
+    border: solid 4px #78146A; 	
+    background-color: #78146A;
+
+}
+#navGenInfo li.selected {
+    border: solid 4px #716589; 
+	background-color: #716589;
+	border-bottom:  solid 1px #716589;	
+
+} 
+
+#navGenInfo.selected {
+	border: solid 4px #716589;
+	
+}
+
+#navGenInfo a.selected, li.selected a.selected {
+	border:none;
+}
+
+#navGenInfo em.selected {
+  background-color:#4E0644;
+}
+
+#navGenInfo li {
+
+    background-color:#4E0644;
+    border: solid 4px #4E0644;     
+   	border-bottom:  solid 1px #716589;
+    height:25px;
+    padding-top: 2.5px;
+   	
+}
+
+#navGenInfo li.selected {
+    border: solid 4px #78146A; 
+	background-color: #78146A;
+	border-bottom:  solid 1px #716589;	
+
+} 
+
+.globalNavParent a:link {
+    color:#ffffff;
+    vertical-align:top;
+}
+
+.globalNavParent1 a:visited,.globalNavParent2 a:visited,.globalNavParent3 a:visited, .globalNavParent4 a:visited, .globalNavParent5 a:visited{
+    color:#ffffff;
+    vertical-align:top;
+}
+
+.globalNavChild a:link {
+    color:#000000;
+    vertical-align:top;
+}
+
+.globalNavParent a:visited {
+    color:#ffffff;
+    vertical-align:top;
+    
+}
+
+#studentNav li, #instructorNav li {
+	color: #666666;
+	border: none;
+	padding-top:10px;	
+}
+
+#studentNav li.selected, #instructorNav li.selected {
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 12px;
+  color: #000000;
+}
+
+#studentNavHeader {
+  text-align: left;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 1px;	
+  margin-left: 5px;
+  background: url(/images/forms/portal_nav_bg.gif) no-repeat;		
+  width: 165px;
+  height: 27px;
+  color: #ffffff;
+    
+}
+
+.studentNavFooter, .instructorNavFooter {
+    margin-left: 5px;
+}
+
+
+.localNavParent, .localNavParent a:link, .localNavParent a:visited,
+.localNavParentoff, .localNavParentoff a:link, .localNavParentoff a:visited {
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 12px;
+  color: #ffffff;
+  padding-left:10px;
+}
+
+.localNavChild, .localNavChild a:link, .localNavChild a:visited,
+.localNavChildoff, .localNavChildoff a:link, .localNavChildoff a:visited {
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 12px;
+  color: #ffffff;
+  padding-left:20px;
+}
+
+.localNavParent a:hover, .localNavParentoff a:hover,
+.localNavChild a:hover, .localNavChildoff a:hover {
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 12px;
+  color: #000000;
+}
+
+
+.localNavParenton, .localNavParenton a:visited,  .localNavParenton a:link {
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 12px;
+  color: #000000;
+  padding-left:10px;
+}
+
+.localNavChildon, .localNavChildon a:visited,  .localNavChildon a:link {
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 12px;
+  color: #000000;
+  padding-left:20px;
+}
+
+
+#studentTab {
+    background:url(/images/student_tab_off.gif) top right no-repeat;
+    width: 100px;
+    height: 29px;
+    vertical-align: bottom;
+    text-align: center;
+	font-weight: bold;
+	color: #ffffff;    
+}
+#instructorTab{
+    background:url(/images/instructor_tab_off.gif) top right  no-repeat;
+    width: 90px;
+    height: 29px;
+    vertical-align: bottom;
+    text-align: center;
+	font-weight: bold;
+	color: #666666;    
+}
+
+.appInstanceNav  {
+    background:url(/images/form/app_instance_nav_bg.gif)  no-repeat right bottom;
+    font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 10pt;
+    width: 220px;
+    height: 27px;
+    text-align: center ;
+    color:#ffffff;
+    font-weight: bold;
+}
+
+.appInstanceNav a:hover {
+	color:#000000;
+}
+
+.appInstanceCell, 
+.appInstanceCell a:link,
+.appInstanceCell a:visited {
+	background-color: #999999;
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #ffffff;
+    width:190px;
+}
+
+.appInstancePageon, 
+.appInstancePageon a:link,
+.appInstancePageon a:visited {
+	color: #000000;
+}
+
+.appInstanceCell a:hover {
+	background-color: #999999;
+	color: #000000;
+}
+
+.appInstanceleft {
+	background-color: #999999;
+
+}
+
+.lightgray {
+  background-color: #666666;
+
+}
+
+.lightgray a:link, .lightgray a:visited  {
+  color:#ffffff;	
+}
+
+.lightgray a:hover {
+  color:#000000;	
+}
+
+.lightgraySide {
+    background: url(/images/forms/app_instance_bg.gif) repeat-y right;
+    width:5px;  
+}
+
+div.buttonBorder div span {
+    cursor:pointer;
+}
+
+a.listHeaderAnchor {
+	color: #FFC428;
+	font-weight: bold;
+}
+
+#reportSectionList .reportSectionListBullet
+{
+    float:left;
+    margin-right:3px;
+    clear:left;
+}
+
+#reportSectionList .reportSectionListContent
+{
+    float:left;
+    width:89%;
+}
+
+#reportList
+{
+    margin-right:5px;
+}
+
+#reportList .firstOption
+{
+    font-style:italic;  
+}
+

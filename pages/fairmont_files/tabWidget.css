@@ -1,0 +1,138 @@
+/* .yui-navset defaults to .yui-navset-top */
+
+/* mouse over */
+.yui-skin-sam .yui-navset .yui-nav a:hover,
+.yui-skin-sam .yui-navset .yui-nav a:focus {
+    background:#999999 url(/images/tabview_mousemove.gif) no-repeat; /* selected tab background */
+    outline:0;
+	vertical-align:middle;
+    font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	text-align: center;
+	width: 94px;
+    height: 30px
+}
+/* unselected tab */
+.yui-skin-sam .yui-navset .yui-nav a,
+.yui-skin-sam .yui-navset .yui-navset-top .yui-nav a {
+    background:#e3e3e3 url(/images/tabview_unselected.gif) no-repeat; /* tab background */
+    border:solid #FF0000;
+    border-width:0 1px;
+    border-color:#FFFFFF; 
+    color:#000;
+    position:relative;
+    text-decoration:none;
+    font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	text-align: center;
+	vertical-align:middle;
+	width: 94px;
+    height: 30px;
+}
+/* selected tab */
+.yui-skin-sam .yui-navset .yui-nav .selected a,
+.yui-skin-sam .yui-navset .yui-nav .selected a:focus,
+.yui-skin-sam .yui-navset .yui-nav .selected a:hover
+{
+
+
+	background: #7e7e7e url(/images/tabview_selected.gif)
+		no-repeat left 0px;
+	vertical-align:middle;
+	color: #fff;	
+    font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-weight: bold;
+	text-align: center;
+    width: 94px;
+    height: 30px;
+}
+
+ /* between tab  and content */ 
+.yui-skin-sam .yui-navset .yui-nav,
+.yui-skin-sam .yui-navset .yui-navset-top .yui-nav
+{
+	border: solid #666666; 
+	border-width: 0 0 1px;
+	zoom: 1;
+	padding:0 0 0 0;
+}
+
+.yui-skin-sam .yui-navset .yui-nav .singleline a
+{
+	line-height: 3em;
+}
+
+/* the top of tab view */
+.yui-skin-sam .yui-navset .yui-nav a em,
+.yui-skin-sam .yui-navset .yui-navset-top .yui-nav a em
+{
+	border: solid #a3a3a3;
+	border-width: 0px 0 0;
+	padding: 0.25em .75em;;
+	left: 0;;
+	right: 0;;
+	bottom: 0;;
+	top: -1px;;
+	position: relative;
+	font-weight: bold;
+	text-align: center;
+	/* font-weight: bold; */
+}
+
+.yui-skin-sam .yui-navset .yui-nav li, 
+.yui-skin-sam .yui-navset .yui-navset-top .yui-nav li   {
+    margin:0 0 0 0;  /* space between tabs */
+    padding:1px 0 0; /* gecko: make room for overflow */
+    zoom:1;
+}
+/* between select tab  and other tab */
+.yui-skin-sam .yui-navset .yui-nav .selected, 
+.yui-skin-sam .yui-navset .yui-navset-top .yui-nav .selected {
+	margin:0 0 0px 0;
+}
+
+.yui-skin-sam .yui-navset .yui-nav .selected a em {
+    padding:0.35em 0.75em; /* raise selected tab */
+}
+
+.yui-skin-sam .yui-navset .yui-nav .selected a,
+.yui-skin-sam .yui-navset .yui-nav .selected a em {
+    border-color:#FFFFFF; /* selected tab border color */
+}
+
+.yui-skin-sam .yui-navset .yui-content {
+    background:#FFFFFF; /* content background color */
+}
+
+.yui-skin-sam .yui-navset .yui-content,
+.yui-skin-sam .yui-navset .yui-navset-top .yui-content {
+    border:0px solid #FFFFFF; /* content border */
+    border-top-color:#243356; /* different border color */
+    padding:0.25em 0.5em; /* content padding */
+}
+/* default space between tabs */
+.yui-navset .yui-nav li,
+.yui-navset .yui-navset-top .yui-nav li,
+.yui-navset .yui-navset-bottom .yui-nav li {
+    margin:0 0.5em 0 0; /* horizontal tabs */
+}
+.yui-navset-left .yui-nav li,
+.yui-navset-right .yui-nav li {
+    margin:0 0 0.5em; /* vertical tabs */
+}
+
+/* default width for side tabs */
+.yui-navset .yui-navset-left .yui-nav,
+.yui-navset .yui-navset-right .yui-nav,
+.yui-navset-left .yui-nav,
+.yui-navset-right .yui-nav { width:6em; }
+
+.yui-navset-top .yui-nav,
+.yui-navset-bottom .yui-nav {
+    width:auto;
+}
+.yui-navset .yui-navset-left,
+.yui-navset-left { padding:0 0 0 6em; } /* map to nav width */
+.yui-navset-right { padding:0 6em 0 0; } /* ditto */

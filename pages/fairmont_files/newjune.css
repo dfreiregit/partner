@@ -1,0 +1,32 @@
+/* @license
+ * MyFonts Webfont Build ID 2516555, 2013-03-28T12:18:56-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: New June SemiBold Italic by Hubert Jocham Type
+ * URL: http://www.myfonts.com/fonts/hubertjocham/new-june/semibold-italic/
+ * 
+ * Webfont: New June Medium Italic by Hubert Jocham Type
+ * URL: http://www.myfonts.com/fonts/hubertjocham/new-june/medium-italic/
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2516555
+ * Webfonts copyright: Copyright (c) 1999 by Hubert Jocham. All rights reserved.
+ * 
+ * © 2013 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/26664b");
+
+  
+@font-face {font-family: 'NewJuneSemibold-Italic';src: url('26664B_0_0.eot');src: url('26664B_0_0.eot?#iefix') format('embedded-opentype'),url('26664B_0_0.woff') format('woff'),url('26664B_0_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'NewJuneMedium-Italic';src: url('26664B_1_0.eot');src: url('26664B_1_0.eot?#iefix') format('embedded-opentype'),url('26664B_1_0.woff') format('woff'),url('26664B_1_0.ttf') format('truetype');}
+ 
