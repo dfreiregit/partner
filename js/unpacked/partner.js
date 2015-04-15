@@ -13,6 +13,7 @@ jQuery(document).ready(function ($) {//important to pass the $ because somewhere
 			'world-renowned Samuel Curtis Johnson Graduate School of Management, the School of Industrial and Labor Relations (ILR), and the School of Hotel Administration, ' + 
 			'a leader in hospitality-management education consistently ranked among the very top institutions worldwide.</p></div>');
 	$('.welcome').wrap('<a href="#videoModal" data-toggle="modal" class="welcome-vid-link"></a>');
+	$('.welcome').show();
 	
 	$('#noticesSection').insertAfter( $('.courseCertListing:first') );
 	
