@@ -1,0 +1,819 @@
+@import "../../../../../../Applications/MAMP/htdocs/wp/wp-content/themes/ecustom/css/less/bootstrap/bootstrap";
+@import "../../../../../../Applications/MAMP/htdocs/wp/wp-content/themes/ecustom/css/less/bootstrap/responsive";
+
+@red: #ea1e24;
+@brightred: #ff3137;
+@almost-black: #333333;
+@navbarHeight: 114px;
+@navbarBackgroundHighlight: #ffffff;
+@navbarBackground: #ffffff;
+@navbarBorder: none;
+@navbarText: #59595b;
+@navbarLinkColor: #59595b;
+@navbarLinkColorHover: @red;
+@navbarLinkColorActive: @red;
+@navbarLinkBackgroundHover: #fff;
+@navbarLinkBackgroundActive: #fff;
+@baseBorderRadius: 3px;
+@linkColor: @red;
+@cobalt: #366593;
+@lightcobalt: #5686ae;
+@skyblue: #4B8CCC;
+@smoke: #F8F8F8;
+@darksmoke: #F1F1F1;
+@adminBarHeight: 32px;
+@adminBarMobileHeight: 47px;
+@hrcolor: #d5d5d5;
+@mobileWidth: 767px;
+@navbarCollapseWidth: 979px;
+@clearNavBarCollapse: 75px;
+@thisNavbarCompactHeight: 48px;
+@navbarCollapseWidthForHeader: @navbarCollapseWidth;
+@lighter-black: #5a5a5a;
+@smallerModalBreak: 540px;
+@main-gutter-width: 14px;
+
+@import "https://cloud.typography.com/7866252/699502/css/fonts.css";
+@import "https://www.ecornell.com/wp-content/themes/ecustom/font/newjune.css";
+
+@sansFontFamily:  'Gotham 4r', 'Gotham A', 'Gotham B', "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+.newJune(){
+  font-family: 'NewJuneMedium-Italic';
+  font-weight: normal;
+  font-style: normal;
+}
+.newJuneBold(){
+  font-family: 'NewJuneSemibold-Italic';
+  font-weight: normal;
+  font-style: normal;
+}
+
+.gothamBook() {
+	font-family: 'Gotham 4r', 'Gotham A', 'Gotham B';
+	font-weight: 400;
+	font-style: normal;
+}
+
+.gothamItalic() {
+	font-family: 'Gotham 4i', 'Gotham A', 'Gotham B';
+	font-weight: 400;
+	font-style: italic;
+}
+
+.gothamMedium() {
+	font-family: 'Gotham 5r', 'Gotham A', 'Gotham B';
+	font-weight: 500;
+	font-style: normal;
+}
+
+.gothamMediumItalic() {
+	font-family: 'Gotham 5i', 'Gotham A', 'Gotham B';
+	font-weight: 500;
+	font-style: italic;
+}
+
+.red-btn,
+a.red-btn:link	 {
+  .gothamBook() !important;
+  display: inline-block;
+  .ie7-inline-block();
+  padding: 7px 20px;
+  font-size: 15px;
+  line-height: 1;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  .buttonBackground(@red, @red, #fff, 0);
+  color: #fff !important;
+  .border-radius(10px);
+  .ie7-restore-left-whitespace(); // Give IE7 some love
+  .box-shadow(1px 1px 3px rgba(0,0,0,.29));
+  
+  &:hover {
+    color: #fff;
+    text-decoration: none;
+    background: @brightred;
+  }
+  &:active{
+    color: #fff;
+    text-decoration: none;
+    background: #d10c12;
+  }
+  &.disabled {
+  	  background: #d10c12;
+	  &.disabled:hover,
+	  &.disabled:active {
+	  	cursor: not-allowed;
+	  }
+  }
+  &:focus {
+    .tab-focus();
+  }
+}
+
+.cobalt-btn,
+a.cobalt-btn:link	 {
+  .gothamBook() !important;
+  display: inline-block;
+  .ie7-inline-block();
+  padding: 7px 20px;
+  font-size: 15px;
+  line-height: 1;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  .buttonBackground(@lightcobalt, @lightcobalt, #fff, 0);
+  color: #fff !important;
+  .border-radius(10px);
+  .ie7-restore-left-whitespace(); // Give IE7 some love
+  .box-shadow(1px 1px 3px rgba(0,0,0,.29));
+  
+  &:hover {
+    color: #fff;
+    text-decoration: none;
+    background: @skyblue;
+  }
+  &:active{
+    color: #fff;
+    text-decoration: none;
+    background: #23415E;
+  }
+  &.disabled {
+  	  background: #23415E;
+	  &.disabled:hover,
+	  &.disabled:active {
+	  	cursor: not-allowed;
+	  }
+  }
+  &:focus {
+    .tab-focus();
+  }
+}
+
+.stretch-full() {
+  margin-left: -@main-gutter-width;
+  margin-right: -@main-gutter-width;
+}
+
+
+a {
+  .gothamMedium() !important;
+}
+
+body {
+	font-size: 13px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	.gothamMedium();
+	white-space: normal;
+	display: block;
+}
+
+.toggleIndicator {
+	color: @lighter-black !important;
+	.gothamMedium() !important;
+
+	&:before {
+		.rotate(90deg);
+		content: '›';
+		font-size: 20px;
+		display: inline-block;
+		.ie7-inline-block();
+		vertical-align: middle;
+		padding-right: 0px;
+		padding-top: 13px;
+		margin-left: 20px;
+		padding-left: 0px;
+		margin-top: -1px;
+	}
+	
+	&.collapsed {
+		&:before {
+			.rotate(0deg);
+			vertical-align: baseline;
+			margin-left: 11px;
+			margin-right: 9px;
+			padding-top: 4px;
+		}
+	}
+}
+
+.pageWidth {
+	border-top: none;
+	
+	@media ( max-width: 1020px ) {
+		width: 94%;
+	}
+	
+	@media ( max-width: @mobileWidth ) {
+		width: 100%;
+	}
+}
+
+@media ( max-width: 1020px ) {
+	#uc-footer-wrapper,
+	.footer {
+		width: 100%;
+		
+		.container {
+			width: 93%;
+		}
+	}
+}
+
+.topNavigationGroup {
+	display: none;	
+}
+
+.headerGroup {
+	background: @red;
+	margin: 0 !important;
+	white-space: nowrap;
+	padding: 0 10px;
+			
+	.schoolCorporateLogo,
+	.groupCorporateLogo,
+	.schoolCorporateHeader {
+		height: auto !important;
+		margin: auto;
+		float: none !important;
+		max-width: 20%;
+		width: 100%;
+		.box-sizing(border-box);
+		display: inline-block;
+  		.ie7-inline-block();
+  		vertical-align: middle;
+	}	
+			
+	.schoolCorporateLogo {
+		a {
+			.hide-text;
+			background-color: transparent;
+			border: 0;
+			width: 125px;
+			height: 33px;
+			background-image: url(https://s3.amazonaws.com/ecornell/partner_pages/ecornell-partner-logo-white.png);
+			background-position: 0 0;
+			background-repeat: no-repeat;
+			display: block;
+			margin-left: 0;
+			max-width: 100%;
+			
+			@media ( max-width: @mobileWidth ) {
+				background-size: contain;
+			}
+		
+			img {
+				display: none;
+			}
+		}
+	}
+	
+	.groupCorporateLogo {
+		max-width: 58% !important;
+			
+		#corporateGroupLogo {
+			max-width: 100% !important;
+			padding-bottom: 10px;
+			height: auto !important;
+			max-height: 91px;
+			padding-top: 8px;
+			
+			@media ( max-width: @navbarCollapseWidth ) {
+				max-width: 92% !important;
+			}
+		}
+	}
+	
+	.schoolCorporateHeader {
+		
+		a {
+			.hide-text;
+	    	.square(61px);
+	    	background: url(https://www.ecornell.com/wp-content/themes/ecustom/img/cornell-seal-white.png) 0 0 no-repeat;
+	    	display: block;
+	    	float: right;
+	    	margin-right: 0;
+	    	max-width: 100%;
+	    
+	    	@media ( max-width: @mobileWidth ) {
+				background-size: contain;
+			}
+			
+			@media ( max-width: 450px ) {
+				width: 45px;
+			}
+			
+			img {
+				display: none;
+			}
+		}
+	}
+}
+
+#leftPanelContent {
+	.clearfix();
+	@media ( max-width: @navbarCollapseWidth ) {
+		text-align: center;
+	}
+}
+
+.welcome-vid-link {
+	@media ( max-width: @navbarCollapseWidth ) {
+		display: inline-block;
+    	.ie7-inline-block();
+    	width: 30%;
+    	margin-left: 4%;
+		vertical-align: top;
+	}
+	
+	@media ( max-width: @mobileWidth ) {
+		display: block;
+		width: 60%;
+		margin: auto;
+		margin-top: 4%;
+	}
+}
+
+.welcome {
+	display: none;
+	padding-top: 14px;
+	border-top: 2px solid #000;
+	margin-top: 7px;
+	
+	@media ( max-width: @navbarCollapseWidth ) {
+		border-top: none;
+		padding-top: 0;
+		margin-top: 0;
+	}
+	
+	iframe,
+	embed,
+	object,
+	h4,
+	.video-container {
+		display: none;
+	}
+	
+	img {
+		width: 100%;
+	}
+}
+
+.about-ecornell {
+	@media ( max-width: @navbarCollapseWidth ) {
+		border-top: 1px solid #ddd;
+		border-bottom: 1px solid #ddd;
+		margin-top: 10px;
+	}
+	
+	font-size: 12px;
+	
+	h5 {
+		font-size: 15px;
+		margin: 18px 0 3px 0;
+	}
+}
+
+li.iconItem {
+	background: no-repeat left 1px;
+}
+
+.poweredBy {
+	display: none;
+}
+
+div#templateContent01 {
+	margin-top: 0 !important;
+	border-top: 7px solid #ddd;
+}
+
+div#templateContent01Panel01 {
+	width: 21%;
+	.box-sizing(border-box);
+	
+	@media ( max-width: @navbarCollapseWidth ) {
+		width: 100%;
+	}
+	
+	.segmentContainer01Content {
+		width: auto;
+		padding: 10px 10px 0 10px;
+		
+		.contactInfo {
+			@media ( max-width: @navbarCollapseWidth ) {
+				display: inline-block;
+    			.ie7-inline-block();
+				width: auto;
+				vertical-align: top;
+				text-align: left;
+			}
+			
+			+ .contactInfo {
+				@media ( max-width: @navbarCollapseWidth ) {
+					margin-left: 0;
+					margin-top: 40px;
+				}
+				
+				@media ( max-width: 402px ) {
+					margin-top: 0;
+				}
+			}
+		
+			h1 {
+				.gothamMedium() !important;
+				font-size: 14px !important;
+			}
+		}
+	}
+}
+
+div#templateContent01Panel03 {
+	border-left: 1px solid #DDD;
+	width: 79%;
+	.box-sizing(border-box);
+	
+	@media ( max-width: @navbarCollapseWidth ) {
+		width: 100%;
+		border-left: none;
+	}
+	
+	.segmentContainer03Content {
+		width: auto;
+		padding: @main-gutter-width;
+	}
+}
+
+.quote-outer-wrapper {
+	letter-spacing: -.1px;
+	
+	> img {
+		padding-top: .5%;
+	}
+}
+
+.quote-author {
+	text-align: right;
+	margin-top: 20px;
+	font-weight: 500;
+}
+
+.cta-outer-wrapper {
+	background: #d7e0e7;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	.stretch-full();
+	
+	.alt-cta{
+		> .span6 {
+			width: 55%;
+			margin: 0;
+			border-left: 1px solid #fff;
+			padding: 10px 16px;
+			
+			@media ( max-width: @mobileWidth ) {
+				border-left: none;
+				border-top: 1px solid #fff;
+			}
+			
+			&.text-wrapper {
+				width: 45%;
+				margin: 0;
+				border-left: none;
+				
+				.cobalt-btn {
+					margin-top: 10px;
+				}
+			}		
+			
+			@media ( max-width: @mobileWidth ) {
+				width: 100% !important;
+			}
+		}
+	}
+	
+	.cta-wrapper {
+		width: 100%;
+		
+		> .span6 {
+			width: 55%;
+			margin: 0;
+			
+			&.text-wrapper {
+				width: 45%;
+				margin: 0;
+			}		
+			
+			@media ( max-width: @mobileWidth ) {
+				width: 100% !important;
+			}
+		}
+		
+		.video-thumb-wrapper {
+			img {
+				display: block;
+				position: relative;
+				right: -2px;
+			}
+		
+			iframe {
+				display: none;
+			}
+		}
+		
+		.cta-left {
+			padding: 0 8px 8px 20px;
+			
+			@media ( min-width:997px ) {
+				line-height: 18px
+			}
+			
+			@media ( min-width:997px ) and ( max-width:1020px )  {
+				line-height: 16px;
+			}
+			
+			@media ( min-width:980px ) and ( max-width:996px )  {
+				line-height: 15px;
+				font-size: 12.5px;
+				
+			}
+			
+			@media ( min-width:768px ) and ( max-width:930px )  {
+				line-height: 15px;
+				font-size: 12px;
+			}
+			
+			h4 {
+				padding-top: 12px;
+				padding-bottom: 6px;
+				margin: 0;
+				font-size: 15px;
+				color: @lighter-black;
+				
+				@media ( max-width: 1020px ) {
+					padding-top: 12px;
+				}
+			}
+			
+			.red-btn,
+			.cobalt-btn {
+				margin-top: 20px;
+				
+				@media ( max-width:1020px )  {
+					font-size: 14px;
+				}
+				
+				@media ( min-width:980px ) and ( max-width:1020px )  {
+					margin-top: 13px;
+				}
+				
+				@media (min-width: 810px) and (max-width: @navbarCollapseWidth){
+					margin-top: 20px;
+				}
+				
+				@media ( min-width:768px ) and ( max-width:809px )  {
+					margin-top: 9px;
+				}
+				
+				@media ( max-width: @mobileWidth ) {
+					margin-bottom: 10px;
+				}
+			}
+		}
+	}//.cta-wrapper
+}//.cta-outer-wrapper
+
+.cert-crs-header {
+	.gothamBook();
+	.stretch-full();
+	margin-top: 20px;
+	margin-bottom: 0;
+	font-size: 20px;
+	background: @red;
+	color: #fff;
+	text-align: center;
+	line-height: normal;
+	padding: 11px 2px;
+	
+	@media ( max-width: @mobileWidth ) {
+		font-size: 17px;
+	}
+}
+
+.enroll-now-instructions {
+	tr {
+		vertical-align: top;
+		
+		td {
+			padding: 10px;
+			
+			&:first-child {
+				border-right: 1px solid #ddd;
+			}
+			
+			+ td {
+				.gothamMedium();
+				font-size: 15px;
+				width: 25%;
+				
+				@media ( max-width: @mobileWidth ) {
+					font-size: 13px;
+				}
+			}
+		}
+	}
+}
+
+.toggleTrigger {
+	.toggleIndicator();
+	color: @almost-black;
+	
+	&:before {
+		font-size: 16px;
+		margin-top: 1px;
+		margin-left: 9px;
+	}
+	
+	&.collapsed {
+		&:before {
+			margin-left: 0;
+		}
+	}
+}
+
+.notices {
+	font-size: 85%;
+}
+
+#noticesSection {
+	margin-top: 20px;
+}
+
+.courseCertListing {
+	.stretch-full() !important;
+	border-top: 1px solid #ddd;
+	
+	> br {
+		display: none;
+	}
+	
+	> h2 {
+		line-height: 22px;
+		
+		> a {
+			.newJune() !important;
+			color: @red;
+			
+			> img {
+				vertical-align: text-top;
+			}
+		}
+	}
+	
+	span {
+		display: none;
+	}
+	
+	#certificateListing,
+	#courseListing {
+		h2 {
+			.gothamMedium();
+			line-height: normal;
+			cursor: pointer;
+			
+			&:before {
+				content: '›';
+				font-size: 20px;
+				display: inline-block;
+				.ie7-inline-block();
+				vertical-align: middle;
+				padding-right: 8px;
+				padding-top: 0;
+				margin-left: 5px;
+				margin-top: -5px;
+			}
+			
+			&.expanded {
+				&:before {
+					.rotate(90deg);
+					vertical-align: baseline;
+					padding-right: 0;
+					padding-top: 6px;
+					margin-left: 7px;
+					padding-left: 6px;
+					margin-top: -8px;
+				}
+			}
+		}
+		
+		.availableLink {
+			color: @red;
+		}
+	}
+	
+	.toggleLink a {
+		.toggleIndicator();
+	
+		img {
+			display: none !important;
+		}
+	}
+	
+	.products-list {
+		margin-left: 3%;
+		width: 97%;
+		display: none;
+		
+		td {
+			width: 85%;
+			
+			+ td {
+				width: 15%;
+			}
+		}
+	}
+}
+
+#videoModal {
+	.box-shadow(none) !important;
+	background: transparent !important;
+	border: none !important;
+	
+	.modal-header {
+		padding: 0 !important;
+		border: none !important;
+		
+		.close {
+			.opacity(70);
+			color: #fff;
+			text-shadow: none;
+			font-size: 25px;
+			padding-left: 5px;
+		}
+	}
+	
+	.modal-body {
+		padding: 0 !important;
+		
+		.video-container {
+			padding-bottom: 62%;
+		}
+	}
+}
+
+/* utility classes */
+.img-left {
+	float: left;
+	margin-right: 2%;
+	margin-bottom: 1%;	
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.float-left {
+	float: left;
+}
+
+.float-right {
+	float: right;
+}
+
+.force-inline-block {
+	display: inline-block !important;
+	.ie7-inline-block() !important;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+.red {
+	color: @red;	
+}

@@ -1,0 +1,1027 @@
+@charset "UTF-8";
+@charset "UTF-8";
+/* CSS Document */
+@import "./font/newjune.css";
+
+#uc-header button
+{
+  margin: 0;
+  font-size: 100%;
+  vertical-align: middle;
+}
+#uc-header button,
+#uc-header input {
+  *overflow: visible;
+  line-height: normal;
+}
+
+#uc-header button::-moz-focus-inner,
+#uc-header input::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+#uc-header button,
+#uc-header html input[type="button"]
+{
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+#uc-header a, #uc-footer a {
+  color: #ea1e24;
+  text-decoration: none;
+}
+
+
+#uc-header a:hover {
+  color: #ab1015;
+  text-decoration: underline;
+}
+
+#uc-header a:focus, #uc-footer a:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+#uc-header a:hover, #uc-footer a:hover,
+#uc-header a:active, #uc-footer a:active {
+  outline: 0;
+}
+
+#uc-footer a {
+	border-left: none;
+	padding-left: 0px;
+}
+
+
+.container,
+#uc-header .navbar-static-top .container,
+#uc-header .navbar-fixed-top .container,
+#uc-header .navbar-fixed-bottom .container {
+  width: 940px;
+}
+
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  *zoom: 1;
+}
+#uc-header p, #uc-footer p {
+  margin: 0 0 10px;
+}
+
+#uc-header h3
+{
+  margin: 10px 0;
+  font-family: inherit;
+  font-weight: bold;
+  line-height: 20px;
+  color: inherit;
+  text-rendering: optimizelegibility;
+}
+#uc-header h3 {
+  line-height: 40px;
+}
+#uc-header h3 {
+  font-size: 24.5px;
+}
+#uc-header ul,
+#uc-header ol {
+  padding: 0;
+  margin: 0 0 10px 25px;
+}
+#uc-header li {
+  line-height: 20px;
+}
+#uc-header button, #uc-footer button
+{
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+}
+#uc-header button, #uc-footer button
+ {
+  font-family: 'Colfax-Regular', "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  *margin-right: .3em;
+  line-height: 14px;
+  vertical-align: text-top;
+  background-image: url(".http://www.ecornell.com/wp-content/themes/ecustom/img/glyphicons-halflings.png");
+  background-position: 14px 14px;
+  background-repeat: no-repeat;
+  margin-top: 1px;
+}
+
+.dropup,
+.dropdown {
+  position: relative;
+}
+
+#uc-header .btn, #uc-footer .btn {
+  display: inline-block;
+  *display: inline;
+  /* IE7 inline-block hack */
+
+  *zoom: 1;
+  padding: 4px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  color: #333333;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  background-color: #f5f5f5;
+  background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+  background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
+  border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #e6e6e6;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  border: 1px solid #bbbbbb;
+  *border: 0;
+  border-bottom-color: #a2a2a2;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  *margin-left: .3em;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+  -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+}
+
+#uc-header .btn, #uc-footer .btn {
+  border-color: #c5c5c5;
+  border-color: rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.25);
+}
+
+#uc-header .btn:hover,  #uc-footer .btn:hover,
+#uc-header .btn:active, #uc-footer .btn:active,
+#uc-header .btn.active, #uc-footer .btn.active,
+#uc-header .btn.disabled, #uc-footer .btn.disabled,
+#uc-header .btn[disabled], , #uc-footer .btn[disabled] {
+  color: #333333;
+  background-color: #e6e6e6;
+  *background-color: #d9d9d9;
+}
+#uc-header .btn:active, #uc-footer .btn:active,
+#uc-header .btn.active, #uc-footer .btn.active {
+  background-color: #cccccc \9;
+}
+#uc-header .btn:first-child, #uc-footer .btn:first-childe {
+  *margin-left: 0;
+}
+#uc-header .btn:hover, #uc-footer .btn:hover {
+  color: #333333;
+  text-decoration: none;
+  background-position: 0 -15px;
+  -webkit-transition: background-position 0.1s linear;
+  -moz-transition: background-position 0.1s linear;
+  -o-transition: background-position 0.1s linear;
+  transition: background-position 0.1s linear;
+}
+#uc-header .btn:focus, #uc-footer .btn:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+#uc-header .btn.active, #uc-footer .btn.active,
+#uc-header .btn:active, #uc-footer .btn:active {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05);
+  -moz-box-shadow: inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05);
+  box-shadow: inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05);
+}
+#uc-header .btn.disabled, #uc-footer .btn.disabled,
+#uc-header .btn[disabled], #uc-footer .btn[disabled] {
+  cursor: default;
+  background-image: none;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+#uc-header button.btn, #uc-footer button.btn,
+#uc-header input[type="submit"].btn, #uc-footer input[type="submit"].btn {
+  *padding-top: 3px;
+  *padding-bottom: 3px;
+}
+
+.nav {
+  margin-left: 0;
+  margin-bottom: 20px;
+  list-style: none;
+}
+.nav > li > a {
+  display: block;
+}
+.nav > li > a:hover {
+  text-decoration: none;
+  background-color: #eeeeee;
+}
+
+.nav > .disabled > a {
+  color: #999999;
+}
+.nav > .disabled > a:hover {
+  text-decoration: none;
+  background-color: transparent;
+  cursor: default;
+}
+#uc-header .navbar {
+  overflow: visible;
+  margin-bottom: 20px;
+  *position: relative;
+  *z-index: 2;
+}
+#uc-header .navbar-inner {
+  min-height: 114px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #ffffff;
+  background-image: -moz-linear-gradient(top, #ffffff, #ffffff);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#ffffff));
+  background-image: -webkit-linear-gradient(top, #ffffff, #ffffff);
+  background-image: -o-linear-gradient(top, #ffffff, #ffffff);
+  background-image: linear-gradient(to bottom, #ffffff, #ffffff);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffffffff', GradientType=0);
+  border: 1px solid none;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+  *zoom: 1;
+}
+#uc-header .navbar-inner:before,
+#uc-header .navbar-inner:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+#uc-header .navbar-inner:after {
+  clear: both;
+}
+#uc-header .navbar .container {
+  width: auto;
+}
+.nav-collapse.collapse {
+  height: auto;
+  overflow: visible;
+}
+#uc-header .navbar .brand {
+  float: left;
+  display: block;
+  padding: 47px 20px 47px;
+  margin-left: -20px;
+  font-size: 20px;
+  font-weight: 200;
+  color: #59595b;
+  text-shadow: 0 1px 0 #ffffff;
+}
+#uc-header .navbar .brand:hover {
+  text-decoration: none;
+}
+#uc-header .navbar-text {
+  margin-bottom: 0;
+  line-height: 114px;
+  color: #59595b;
+}
+#uc-header .navbar-link {
+  color: #59595b;
+}
+#uc-header .navbar-link:hover {
+  color: #ea1e24;
+}
+#uc-header .navbar .divider-vertical {
+  height: 114px;
+  margin: 0 9px;
+  border-left: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+}
+#uc-header .navbar .btn,
+#uc-header .navbar .btn-group {
+  margin-top: 42px;
+}
+
+#uc-header .navbar-fixed-top,
+#uc-header .navbar-fixed-bottom {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  margin-bottom: 0;
+}
+#uc-header .navbar-fixed-top .navbar-inner,
+#uc-header .navbar-static-top .navbar-inner {
+  border-width: 0 0 1px;
+}
+#uc-header .navbar-fixed-bottom .navbar-inner {
+  border-width: 1px 0 0;
+}
+#uc-header .navbar-fixed-top .navbar-inner,
+#uc-header .navbar-fixed-bottom .navbar-inner {
+  padding-left: 0;
+  padding-right: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+#uc-header .navbar-static-top .container,
+#uc-header .navbar-fixed-top .container,
+#uc-header .navbar-fixed-bottom .container {
+  width: 940px;
+  padding-left: 40px;
+}
+#uc-header .navbar-fixed-top {
+  top: 0;
+}
+#uc-header .navbar-fixed-top .navbar-inner,
+#uc-header .navbar-static-top .navbar-inner {
+  -webkit-box-shadow: 0 1px 10px rgba(0,0,0,.1);
+  -moz-box-shadow: 0 1px 10px rgba(0,0,0,.1);
+  box-shadow: 0 1px 10px rgba(0,0,0,.1);
+}
+#uc-header .navbar-fixed-bottom {
+  bottom: 0;
+}
+#uc-header .navbar-fixed-bottom .navbar-inner {
+  -webkit-box-shadow: 0 -1px 10px rgba(0,0,0,.1);
+  -moz-box-shadow: 0 -1px 10px rgba(0,0,0,.1);
+  box-shadow: 0 -1px 10px rgba(0,0,0,.1);
+}
+#uc-header .navbar .nav {
+  position: relative;
+  left: 0;
+  display: block;
+  float: left;
+  margin: 0 10px 0 0;
+}
+#uc-header .navbar .nav.pull-right {
+  float: right;
+  margin-right: 0;
+}
+#uc-header .navbar .nav > li {
+  float: left;
+}
+#uc-header .navbar .nav > li > a {
+  float: none;
+  padding: 47px 15px 47px;
+  color: #59595b;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #ffffff;
+}
+#uc-header .navbar .nav .dropdown-toggle .caret {
+  margin-top: 8px;
+}
+#uc-header .navbar .nav > li > a:focus,
+#uc-header .navbar .nav > li > a:hover {
+  background-color: #ffffff;
+  color: #ea1e24;
+  text-decoration: none;
+}
+#uc-header .navbar .nav > .active > a,
+#uc-header .navbar .nav > .active > a:hover,
+#uc-header .navbar .nav > .active > a:focus {
+  color: #ea1e24;
+  text-decoration: none;
+  background-color: #ffffff;
+  -webkit-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
+  -moz-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
+}
+#uc-header .navbar .btn-navbar {
+  display: none;
+  float: right;
+  padding: 7px 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #f2f2f2;
+  background-image: -moz-linear-gradient(top, #f2f2f2, #f2f2f2);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(#f2f2f2));
+  background-image: -webkit-linear-gradient(top, #f2f2f2, #f2f2f2);
+  background-image: -o-linear-gradient(top, #f2f2f2, #f2f2f2);
+  background-image: linear-gradient(to bottom, #f2f2f2, #f2f2f2);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff2f2f2', endColorstr='#fff2f2f2', GradientType=0);
+  border-color: #f2f2f2 #f2f2f2 #cccccc;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #f2f2f2;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 0 rgba(255,255,255,.075);
+  -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 0 rgba(255,255,255,.075);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 0 rgba(255,255,255,.075);
+}
+#uc-header .navbar .btn-navbar:hover,
+#uc-header .navbar .btn-navbar:active,
+#uc-header .navbar .btn-navbar.active,
+#uc-header .navbar .btn-navbar.disabled,
+#uc-header .navbar .btn-navbar[disabled] {
+  color: #ffffff;
+  background-color: #f2f2f2;
+  *background-color: #e5e5e5;
+}
+#uc-header .navbar .btn-navbar:active,
+#uc-header .navbar .btn-navbar.active {
+  background-color: #d9d9d9 \9;
+}
+#uc-header .navbar .btn-navbar .icon-bar {
+  display: block;
+  width: 18px;
+  height: 2px;
+  background-color: #f5f5f5;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
+  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+}
+.btn-navbar .icon-bar + .icon-bar {
+  margin-top: 3px;
+}
+
+
+#uc-header .navbar .nav a.red-btn {
+    float: left;
+    font-family: 'NewJuneMedium-Italic';
+    font-style: normal;
+    font-weight: normal;
+    margin-top: 35px;
+    padding: 13px 29px;
+    text-transform: none;
+}
+
+#uc-header a.red-btn {
+  font-family: 'NewJuneMedium-Italic';
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  *display: inline;
+  /* IE7 inline-block hack */
+
+  *zoom: 1;
+  padding: 13px 29px;
+  font-size: 15px;
+  line-height: 1;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  color: #ffffff;
+  text-shadow: 0;
+  background-color: #ea1e24;
+  background-image: -moz-linear-gradient(top, #ea1e24, #ea1e24);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ea1e24), to(#ea1e24));
+  background-image: -webkit-linear-gradient(top, #ea1e24, #ea1e24);
+  background-image: -o-linear-gradient(top, #ea1e24, #ea1e24);
+  background-image: linear-gradient(to bottom, #ea1e24, #ea1e24);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffea1e24', endColorstr='#ffea1e24', GradientType=0);
+  border-color: #ea1e24 #ea1e24 #ab1015;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #ea1e24;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  *margin-left: .3em;
+  -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.29);
+  -moz-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.29);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.29);
+}
+#uc-header a.red-btn:hover,
+#uc-header a.red-btn:active,
+#uc-header a.red-btn.active,
+#uc-header a.red-btn.disabled,
+#uc-header a.red-btn[disabled] {
+  color: #ffffff;
+  background-color: #ea1e24;
+  *background-color: #da141a;
+}
+#uc-header a.red-btn:active,
+#uc-header a.red-btn.active {
+  background-color: #c31217 \9;
+}
+#uc-header a.red-btn:first-child {
+  *margin-left: 0;
+}
+#uc-header a.red-btn:hover {
+  color: #fff;
+  text-decoration: none;
+  background: #ff3137;
+}
+#uc-header a.red-btn:active {
+  color: #fff;
+  text-decoration: none;
+  background: #d10c12;
+}
+#uc-header a.red-btn:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+/* HEADER */
+#uc-header .navbar .navbar-inner {
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+}
+#uc-header .navbar .brand {
+  width: 141px;
+  height: 37px;
+  background: url(//www.ecornell.com/wp-content/themes/ecustom/img/sprite.png) 0 0 no-repeat;
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  margin: 38px 20px 38px 0;
+}
+#uc-header .navbar .nav li {
+  padding: 0;
+  margin: 0 12px;
+}
+#uc-header .navbar .nav li a {
+  margin: 0;
+  padding-left: 0;
+  padding-right: 0;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-family: 'Colfax-Medium', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+#uc-header .navbar .nav li.active > a,
+#uc-header .navbar .nav li.active > a:hover,
+#uc-header .navbar .nav li.active > a:focus,
+#uc-header .navbar .nav li.current_page_parent > a,
+#uc-header .navbar .nav li.current_page_parent > a:hover,
+#uc-header .navbar .nav li.current_page_parent > a:focus,
+#uc-header .navbar .nav li.current_page_item > a,
+#uc-header .navbar .nav li.current_page_item > a:hover,
+#uc-header .navbar .nav li.current_page_item > a:focus,
+#uc-header .navbar .nav li.current_page_ancestor > a,
+#uc-header .navbar .nav li.current_page_ancestor > a:hover,
+#uc-header .navbar .nav li.current_page_ancestor > a:focus {
+  color: #ea1e24;
+  background-color: #ffffff;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border-bottom: 5px solid #ea1e24;
+  padding-bottom: 42px;
+}
+#uc-header .navbar .nav li.search.open a {
+  background-position: -141px -17px;
+}
+#uc-header .navbar .nav li.search a {
+  width: 17px;
+  height: 17px;
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+  background: url(//www.ecornell.com/wp-content/themes/ecustom/img/sprite.png) -141px 0 no-repeat;
+  padding: 0;
+  margin: 47px 0;
+}
+#uc-header .navbar .nav li.search .dropdown-menu {
+  padding: 0;
+  height: 60px;
+  top: 85%;
+  left: -167px;
+  width: 332px;
+  border: none;
+  -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+  background: #efefef;
+}
+#uc-header .navbar .nav li.search .dropdown-menu:before {
+  content: ' ';
+  position: absolute;
+  left: 50%;
+  top: -10px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #efefef;
+}
+#uc-header .navbar .nav li.search .dropdown-menu:after {
+  display: none;
+}
+#uc-header .navbar .nav li.search .dropdown-menu input-append {
+  margin-bottom: 0px;
+}
+#uc-header .navbar .nav li.search .dropdown-menu input {
+  background: none;
+  border: none;
+  color: #acacad;
+  font-size: 20px;
+  line-height: 60px;
+  height: 60px;
+  padding: 0 20px;
+  width: 83%;
+  border-right: 1px solid #acacad;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#uc-header .navbar .nav li.search .dropdown-menu input:focus {
+  color: #ea1e24;
+}
+#uc-header .navbar .nav li.search .dropdown-menu button {
+  width: 17%;
+  height: 62px;
+  border: none;
+  background: url(//www.ecornell.com/wp-content/themes/ecustom/img/sprite.png) -569px 18px no-repeat;
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+#uc-header .navbar .nav li.login .dropdown-menu {
+  padding: 0;
+  top: 85%;
+  left: -159px;
+  width: 332px;
+  border: none;
+  -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+  background: #acacad;
+}
+#uc-header .navbar .nav li.login .dropdown-menu:before {
+  content: ' ';
+  position: absolute;
+  left: 50%;
+  top: -10px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #efefef;
+}
+#uc-header .navbar .nav li.login .dropdown-menu:after {
+  display: none;
+}
+#uc-header .navbar .nav li.login .dropdown-menu form {
+  margin: 0;
+}
+#uc-header .navbar .nav li.login .dropdown-menu .input-append {
+  margin: 0;
+}
+#uc-header .navbar .nav li.login .dropdown-menu input {
+  float: left;
+  clear: left;
+  background: #efefef;
+  border-top: none;
+  border-right: none;
+  border-bottom: 1px solid #acacad;
+  border-left: none;
+  color: #acacad;
+  font-size: 20px;
+  line-height: 60px;
+  height: 60px;
+  padding: 0 20px;
+  width: 83%;
+  border-right: 1px solid #acacad;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+#uc-header .navbar .nav li.login .dropdown-menu input:focus {
+  color: #ea1e24;
+}
+#uc-header .navbar .nav li.login .dropdown-menu button {
+  background: #efefef;
+  color: #acacad;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  border-left: 1px solid #acacad;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  text-shadow: none;
+  height: 119px;
+  width: 17%;
+  font-size: 50px;
+}
+#uc-header .navbar .nav li.login .dropdown-menu .forgot-password {
+  color: #fff;
+  font-size: 12px;
+  line-height: 12px;
+  padding: 15px 20px;
+  text-transform: none;
+  float: left;
+}
+#uc-header .navbar .nav li.divider-vertical {
+  margin: 9px 0 0 0;
+  border-right: 1px solid #d6d6d6;
+  height: 93px;
+}
+#uc-header .navbar .nav li.login {
+  margin-left: 0;
+}
+#uc-header .navbar .nav li.login a {
+  font-size: 11px;
+  color: #acacad;
+}
+#uc-header .navbar .nav li.seal a {
+  width: 61px;
+  height: 61px;
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+  background: url(//www.ecornell.com/wp-content/themes/ecustom/img/sprite.png) -158px 0 no-repeat;
+  padding: 0;
+  margin: 26px 0;
+}
+#uc-header .navbar .nav a.red-btn {
+  font-family: 'NewJuneMedium-Italic';
+  font-weight: normal;
+  font-style: normal;
+  float: left;
+  margin-top: 35px;
+  padding: 13px 29px;
+  text-transform: none;
+}
+#uc-header .navbar .btn-navbar {
+  background: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border: none;
+}
+#uc-header .navbar .btn-navbar .icon-bar {
+  background: #ea1e24;
+  width: 20px;
+  height: 3px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+#uc-header .navbar .btn-navbar:hover {
+  background: none;
+}
+
+
+/* CUSTOM JS HELPERS */
+.hidden-active {
+  height: auto !important;
+}
+
+/* Footer */
+#uc-footer .span3 { width: 220px; }
+#uc-footer .span2 { width: 140px; }
+
+#uc-footer .clientFooter {
+  z-index: 1;
+  position: relative;
+  background-color: #373737;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+#uc-footer .clientFooter .cornell-logo {
+  display: block;
+  width: 100px;
+  height: 100px;
+  background: url(//www.ecornell.com/wp-content/themes/ecustom/img/sprite.png) -1023px 0 no-repeat;
+  float: right;
+  margin-top: 50px;
+}
+#uc-footer .clientFooter .social-links {
+  padding: 20px 0;
+  border-bottom: 1px solid #4c4c4c;
+  -webkit-box-shadow: inset 0 2px 3px rgba(0,0,0,.8);
+  -moz-box-shadow: inset 0 2px 3px rgba(0,0,0,.8);
+  box-shadow: inset 0 2px 3px rgba(0,0,0,.8);
+}
+#uc-footer .clientFooter .social-links {
+  z-index: 1;
+  position: relative;
+}
+#uc-footer .clientFooter .social-links a {
+  height: 25px;
+  background-image: url(//www.ecornell.com/wp-content/themes/ecustom/img/sprite.png);
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+  margin-right: 30px;
+  float: left;
+}
+#uc-footer .clientFooter .social-links a.facebook {
+  width: 75px;
+  background-position: -219px 0;
+}
+#uc-footer .clientFooter .social-links a.twitter {
+  width: 72px;
+  background-position: -294px 0;
+}
+#uc-footer .clientFooter .social-links a.linkedin {
+  width: 80px;
+  background-position: -366px 0;
+}
+#uc-footer .clientFooter .social-links a.google {
+  width: 76px;
+  background-position: -446px 0;
+}
+#uc-footer .clientFooter .social-links a:hover {
+  opacity: 1 !important;
+  /*override addthis widget behavior */
+
+}
+#uc-footer .clientFooter .social-links a span {
+  display: none;
+}
+#uc-footer .clientFooter h3 {
+  font-family: 'Colfax-Regular', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14px;
+  color: #848484;
+  line-height: 1;
+  margin: 55px 0 25px 0;
+  z-index: 1;
+  position: relative;
+}
+#uc-footer .clientFooter ul {
+  list-style: none;
+  margin: 0;
+  z-index: 1;
+  position: relative;
+}
+#uc-footer .clientFooter ul li {
+  line-height: 1;
+  margin-bottom: 12px;
+}
+#uc-footer .clientFooter ul li a {
+  color: #848484;
+}
+#uc-footer .clientFooter ul li a:hover {
+  color: #aaaaaa;
+}
+#uc-footer .clientFooter .subfooter {
+  color: #636363;
+  font-size: 10px;
+  line-height: 1;
+  padding: 80px 0 20px 0;
+  text-transform: uppercase;
+  z-index: 1;
+  position: relative;
+}
+#uc-footer .clientFooter .subfooter a {
+  color: #636363;
+}
+#uc-footer .clientFooter .subfooter a:hover {
+  color: #898989;
+}
+#uc-footer .clientFooter .with-bg {
+  position: relative;
+}
+#uc-footer .clientFooter .with-bg:after {
+  content: ' ';
+  width: 1000%;
+  height: 452px;
+  background: #3b3b3b;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: -66px;
+  z-index: 0;
+  border-radius: 0 0 330px 0;
+}
+  
+#uc-footer .clientFooter {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+#uc-footer .clientFooter .social-links {
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+}  
+  
+  #uc-footer .clientFooter .with-bg:after {
+    display: none;
+  }
+  
+  #uc-footer .clientFooter {
+  	width: 100%;
+  }
+#uc-footer .container {
+    width: 940px;
+}
+
+#uc-footer .container {
+  margin-right: auto;
+  margin-left: auto;
+  *zoom: 1;
+}
+
+#uc-footer .container:before,
+#uc-footer .container:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+#uc-footer .container:after {
+  clear: both;
+}
+
+#uc-footer [class*="span"] {
+  float: left;
+  min-height: 1px;
+  margin-left: 20px;
+}
+#uc-footer ul {
+  padding: 0;
+  margin: 0 0 10px 25px;
+}
+
+#uc-footer .row {
+  margin-left: -20px;
+  *zoom: 1;
+}
+#uc-footer .row:before,
+#uc-footer .row:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+
+#uc-footer .row:after {
+  clear: both;
+}
+
+#uc-footer a {
+	font-family: Colfax-Regular;
+	font-size: 10px;
+}
+
+/** Browser fixes **/
+#uc-header img {
+  /* Responsive images (ensure images don't scale beyond their parents) */
+
+  max-width: 100%;
+  /* Part 1: Set a maxium relative to the parent */
+
+  width: auto\9;
+  /* IE7-8 need help adjusting responsive images */
+
+  height: auto;
+  /* Part 2: Scale the height according to the width, otherwise you get stretching */
+
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}

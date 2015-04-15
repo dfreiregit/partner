@@ -1,0 +1,88 @@
+function piResponse() {
+piSetCookie('visitor_id44232', '94199842', 3650);
+
+if (document.location.protocol != "https:") {
+var analytics_link = "http://" + "info.ecornell.com/analytics?";
+pi.tracker.visitor_id='94199842'
+var variables = 'conly=true';
+for (property in pi.tracker) {
+	variables += "&"+property+"="+pi.tracker[property];
+}
+var headID = document.getElementsByTagName("head")[0];
+piScriptObj[piScriptNum] = document.createElement('script');
+piScriptObj[piScriptNum].type = 'text/javascript';
+piScriptObj[piScriptNum].src = analytics_link + variables;
+headID.appendChild(piScriptObj[piScriptNum]);
+piScriptObj[piScriptNum].onload = function() { return; }
+}
+}
+piResponse();
+
+
+
+(function(){
+	//make sure that we have olark and pardot on this page
+	if (typeof(window.olark)=="undefined" || typeof(window.pi)=="undefined"){
+		return false;
+	}
+	//update our visitor status if we have it
+	(function(){
+		if(typeof(window.pi.tracker.visitor_id)!=="undefined" && window.pi.tracker.visitor_id==""){
+			window.pi.tracker.visitor_id = piGetCookie('visitor_id'+(piAId - 1000));
+		}
+		if(window.pi.tracker.visitor_id==""){
+			return false;
+		}
+		olark('api.chat.updateVisitorStatus', {snippet: 'Pardot Link : https://pi.pardot.com/visits/index/visitor_id/'+pi.tracker.visitor_id});
+		olark('api.chat.onBeginConversation', function() {
+			olark('api.chat.sendNotificationToOperator', {body: 'Pardot Link : https://pi.pardot.com/visits/index/visitor_id/'+pi.tracker.visitor_id});
+		});
+		return true;
+	})();
+	//send messages to Pardot
+	function logToPardot(extraTackOn){
+		var tackOn = {};
+		tackOn.account_id = piAId;
+		tackOn.campaign_id = piCId;
+		tackOn.visitor_id = pi.tracker.visitor_id;
+		var parameterString = objectToParameterString(tackOn);
+		if(extraTackOn){
+			parameterString += '&' + objectToParameterString(extraTackOn);
+		}
+		var headID = window.document.getElementsByTagName("head")[0];
+		var script = window.document.createElement('script');
+		script.type = 'text/javascript';
+		script.src = '//go.pardot.com/olark/analytics?'+parameterString
+		headID.appendChild(script);
+		script.onload = function() { return; }
+	}
+	//convert an object to an encoded parameter string
+	function objectToParameterString(parametersObject) {
+		var parametersString = "";
+		for ( var key in parametersObject) {
+			if (parametersObject.hasOwnProperty(key) && typeof(parametersObject[key])!=="undefined") {
+				parametersString += encodeURIComponent(key) + "=" + encodeURIComponent(parametersObject[key]) + "&";
+			}
+		}
+		// strip off the last &
+		return parametersString.substring(0, parametersString.length - 1);
+	}
+	olark('api.chat.onBeginConversation',function(event){
+			//if olark has an email send the email to Pardot
+			olark('api.visitor.getDetails', function(details){
+				var tackOn = {};
+				tackOn.visitor_id = pi.tracker.visitor_id;
+				tackOn.conversation_id = olark._.conversationId;
+			    if (details.emailAddress){
+			    	tackOn.email = details.emailAddress;
+			    	if(details.fullName){
+			   			tackOn.name = details.fullName;
+			    	}
+				}
+				logToPardot(tackOn)
+		    });
+	});
+	//Ping first to get any details we can to help the chat
+	logToPardot();
+})();
+

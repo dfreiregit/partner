@@ -1,0 +1,379 @@
+body, .content, .errorCell {
+	font-family: Colfax-Regular, Arial, Helvetica, Verdana, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	font-weight: normal;
+}
+
+body {
+	background-color: #ffffff;
+}
+
+img {
+  width: auto;
+  height: auto;
+}
+
+label {
+  display: inline;
+  margin-bottom: 0px;
+}
+strong, b {
+	font-weight: normal;
+	font-family: Colfax-Medium
+}
+
+hr {
+	color: #3b3b3b;
+	background-color: #3b3b3b;
+	height: 2px;
+	border: 0px;
+}
+
+input, textarea, .uneditable-input {
+    width: auto;
+}
+
+a {
+ color: #000000;
+}
+
+a:link, a:visited, a:active {
+	font-family: Colfax-Medium;
+	font-size: 12px;
+	color: #3b3b3b;
+}
+
+a:hover {
+	color: #ea1e24;
+}
+
+a.externalAnchor {
+    color: #1944FF;
+    text-decoration: underline;
+}
+
+a.listHeaderAnchor {
+	font-weight: normal;
+	font-family: Colfax-Regular-Italic;
+	font-size: 12px;
+	color: #3b3b3b;
+	background: url(/images/custom/redarrow.png) no-repeat right;
+	padding-right: 12px;
+}
+
+td.listHeaderAnchorContainer {
+    text-align: right;
+}
+
+a.listHeaderAnchor:hover {
+	color: #ea1e24;
+}
+
+a.linkOut {
+	background: url(/images/custom/destiny_eC_linkoutIcon.png) no-repeat right;
+	padding-right: 12px;	
+}
+
+a img {
+	border: none;
+}
+
+label, .helpText, h4, .drkBlue, .helpText, h5, legend.marketingQuestionName {
+	font-family: Colfax-Medium;
+	font-size: 12px;
+	color: #000000;
+	font-weight: normal;
+}
+
+input[type="radio"]+label.marketingQuestion {
+	font-family: inherit;
+}
+
+td, th {
+	font-size: 12px;
+}
+
+div.helpText {
+	border-bottom: 2px solid #3b3b3b;;
+}
+.errorCell {
+	padding: 18px;
+}
+
+.errorCell hr {
+	display: none;
+}
+
+.required {
+	color: #ea1e24;
+}
+
+div.page-frame {
+	background-color: white;
+}
+#uc-page-wrapper {
+	background: transparent;
+}
+
+#uc-middle {
+	border: transparent;
+}
+
+#table1 table{
+	width: 100% !important;
+}
+
+#table2 table{
+	width: 100% !important;
+}
+
+#table3 table{
+	width: 100% !important;
+}
+
+.dispayOverride{
+	display: none;
+}
+
+/** Header **/
+#uc-splash a img{
+	border: 0px;
+}
+#uc-header {
+	height: 115px;
+}
+
+/** Side Panel **/
+#cart_container {
+	width: 90px;
+}
+
+#cart_icon {
+	width: 30px;
+	padding-bottom: 24px;
+}
+
+#my_cart {
+	float: right;
+	font-family: 'NewJuneMedium-Italic';
+	font-weight: normal;
+	font-style: normal;
+}
+
+#uc-left-column .sidePanel .logo {
+	background: white;
+	padding-bottom: 10px;
+	padding-left: 5px;
+}
+
+#uc-left-column .sidePanel .logo a img {
+	width: 110px;
+}
+
+
+#uc-left-column .sidePanel .boxTitle {
+	font-family: Colfax-Bold;
+	font-size: 14px;
+	color: #ea1e24;
+}
+
+#uc-left-column #studentMenu ul, #uc-left-column #instructorMenu ul {
+	font-family: Colfax-Bold;
+	font-size: 12px;
+	color: #000000;
+	list-style-type: none;
+	padding: 6px 0 0 0px;
+}
+
+
+#uc-left-column A.listHeaderAnchor {
+	font-family: Colfax-Bold-Italic;
+	color: #000000;
+}
+
+#uc-left-column A.listHeaderAnchor:hover {
+	color: #ea1e24;
+}
+
+
+
+/** Header **/
+#uc-splash {
+  height: 0px;
+}
+
+/** Footer:  Override of sections.css to accomodate client footer **/
+#uc-footer-wrapper {
+  width: auto;
+}
+
+#uc-footer {
+  text-align: left;
+}
+
+
+/** Page Headers **/
+.portalPageHeader, h1 {
+	font-family: Colfax-Medium;
+	font-size: 14px;
+	font-weight: normal;
+	color: #000000;
+}
+
+.subpageHeader, .subHeading, h2 {
+	font-family: Colfax-Medium;
+	font-size: 14px;
+	font-weight: normal;
+	color: #ea1e24;
+}
+
+/** Tables **/
+.tTitle, table h2, form h2 {
+	font-family: NewJuneMedium-Italic;
+	font-size: 14px;
+	background-color: transparent;
+	color: #ea1e24;
+}
+
+.tCell, .goldTableCell {
+	font-family: Colfax-Regular;
+	font-size: 12px;
+	background-color: transparent;
+	color: #000000;
+}
+
+.BoxBgColor_1 {
+	background-color: transparent;
+}
+
+.BoxAttributes {
+	border-bottom: 2px solid #3b3b3b;
+	font-family: Colfax-Regular;
+	font-size: 12px;
+}
+
+.addAnotherSectionBox {
+	border-top: 0px;
+}
+
+/** Checkout Navigation **/
+.checkoutSubNavMain {
+	background-color: transparent;
+	padding-top: 32px;
+	padding-bottom: 24px;
+}
+
+.checkoutSubNavActive {
+	font-family: Colfax-Bold;
+	color: #ea1e24;
+	font-weight: normal;
+	font-size: 14px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-right: 0px;
+	margin-right: 30px;
+
+	border-bottom: solid 4px;
+}
+
+.checkoutSubNavInactive {
+	font-family: Colfax-Medium;
+	color: #ea1e24;
+	font-weight: normal;
+	font-size: 14px;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-right: 30px;
+}
+
+
+/** Specific pages **/
+#portal\.student\.tilesApp\.studentPortal table {
+	border-bottom: 0px !important;
+}
+form[name='portalStudentHomeForm'] table
+ {
+	border-bottom: 2px solid #3b3b3b;
+}
+
+form[name='portalStudentProfileForm'] hr
+ {
+	height: 0px;
+}
+
+form#applicationInstanceForm td
+{
+	background-color: transparent !important;
+}
+
+.appInstanceCell, .appInstanceCell a:link, .appInstanceCell a:visited 
+{
+	font-family: Colfax-Medium;
+	font-size: 12px;
+	color: #000000;
+}
+
+td.sectionDeadlineDate {
+	color: red;
+}
+
+/** Logon form username input size (email address) **/
+input[name='studentNumber'], 
+input[name='instructorNumber'],
+form[name='publicPersonalLogonForm'] input[name='duplicateStudentField']
+{
+	width: 240px;
+}
+
+#studentLogonForm br+br, 
+#studentLogonForm br+br+br, 
+#studentLogonForm br+br+br+br, 
+#studentLogonForm+br, 
+#studentLogonForm+br+br 
+#studentLogonForm+br+br+br 
+{
+	display: none;
+}
+
+/** Page not found **/
+#notFoundContent {
+	padding-left: 80px;
+	padding-bottom: 100px;
+}
+#notFoundContent .notFoundHeader {
+	padding-left: 58px;
+	padding-top: 36px;
+	padding-bottom: 32px;
+}
+
+#notFoundContent .notFoundHeader img.logo {
+	height: 68px;	
+	background-color: white;
+}
+#notFoundContent .notFoundHeader img.seal {
+	height: 50px;	
+	background-color: white;
+	padding: 6px;
+}
+
+#notFoundContent h1 {
+	font-family: NewJuneSemibold-Italic;
+	font-size: 22px;
+	font-weight: normal;
+	color: #ea1e24;
+	padding: 20px 0px;
+	width: 450px;
+}
+
+#notFoundContent .notFoundBody p {
+	font-size: 14px;
+	width: 400px;
+}
+
+#notFoundContent .notFoundBody a {
+	color: #ea1e24; 
+}
+
+/** Buttons **/
+
