@@ -7,6 +7,10 @@ jQuery(document).ready(function ($) {//important to pass the $ because somewhere
 	
 	$('a', '.cancelTransfer').attr('href', 'http://ecornell.force.com/help/articles/FAQ/Organizational-Partner-Drop-Transfer-Policy/');
 	
+	$("a[href*='helpdesk@ecornell.com']")
+		.attr('target', '_blank')
+		.attr('href', 'mailto:helpdesk@ecornell.com');
+	
 	$('.welcome').insertAfter( $('.contactInfo:last') );
 	$('.welcome').prepend('<img src="https://s3.amazonaws.com/ecornell/partner_pages/welcome-thumb.jpg" />');
 	$('.welcome').after('<div class="about-ecornell"><h5>About eCornell</h5><p>eCornell\'s online courses are authored by faculty from Cornell University\'s ' + 
