@@ -11,7 +11,7 @@ if ( typeof jQuery != 'undefined' && jQuery('body.bodyWrapper').size()>0 ) {//ap
 		$("a[href*='helpdesk@ecornell.com']")
 			.attr('target', '_blank')
 			.attr('href', 'mailto:helpdesk@ecornell.com');
-		
+
 		/*
 		$('.welcome').insertAfter($('.contactInfo:last'));
 		$('.welcome').prepend('<img src="https://s3.amazonaws.com/ecornell/partner_pages/welcome-thumb.jpg" />');
